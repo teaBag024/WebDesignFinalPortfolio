@@ -1,0 +1,73 @@
+html{
+     background-color: #EEF;
+     /*overflow-x: hidden;*/
+}
+.caption {
+     position: absolute;
+     top: 10vw;
+     right: 10%;
+     width: 30%;
+     text-align: center;
+
+
+}
+.textbg{
+     background-color: #000;
+     border-radius: 10px;
+     opacity: 75%;
+     color: White;
+     padding: 2.5%;
+     font-size: 3vw;
+     letter-spacing: 8px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+     margin: 2.5%;
+}
+
+.h{
+     background-color: #111;
+     border-radius: 10px;
+     color: White;
+     padding: 1%;
+     font-size: 3vw;
+     letter-spacing: 8px;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+     display: inline-block;
+}
+
+#bar{
+     padding:25px;
+     background-color: #112;
+     position: fixed;
+     z-index: 100;
+
+     color: White;
+}
+
+button {
+     background-color: #000;
+     border-radius: 10px;
+     color: White;
+     padding: 1.5%;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+     margin: 2.5%;
+     outline: none;
+}
+.bdiv{
+     background-color: #000;
+     border-radius: 10px;
+     color: White;
+     padding: 5%;
+     box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+     margin: 2.5%;
+     outline: none;
+}
+.space{
+     color: black;
+     padding: 5%;
+     margin: 2.5%;
+     outline: none;
+}
+
+h6, h1{
+     margin: 0;
+}

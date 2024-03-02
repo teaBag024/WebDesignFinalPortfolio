@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Chapter5-6 | GRAPHICS and Link | Animal Project
+    </title>
+  </head>
+  <style>
+  body {
+    font-family: Arial;
+    margin: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  img {
+    vertical-align: middle;
+  }
+
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+  }
+
+  /* Hide the images by default */
+  .mySlides,
+  .mySlides1 {
+    display: none;
+  }
+
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 20%;
+  }
+
+  /* Add a transparency effect for thumnbail images */
+  .demo,
+  .demo1 {
+    opacity: 0.6;
+  }
+
+  .active,
+  .demo,
+  .demo1:hover {
+    opacity: 1;
+  }
+  </style>
+  <a name = "top">
+  <body bgcolor = "#5F875F">
+    <center>
+    </br>
+    </br>
+      <img src = "Image/banner.JPG" alt="Banner"
+      height = "288" width = "1152"/>
+
+    </br>
+    </br>
+    <table
+    border="1"
+    bgcolor = "#DFFFDF"
+    width = 50%>
+      <tr bgcolor = "#BCBCBC">
+        <th colspan = "3">
+          Website Navigation
+        </th>
+      </tr>
+      <tr>
+        <td><center>
+          Home: You are on this Page
+        </td></center>
+        <td width = 33%><center>
+          <a href = "animala.html" target = "_blank">Dogs</a>
+        </td></center>
+        <td width = 33%><center>
+          <a href = "animalb.html" target = "_blank">Cats</a>
+        </td></center>
+      </tr>
+      </table>
+    </br>
+    </center>
+    <hr
+    color = "#005F00"
+    size = "5"
+    width = 75%
+    align = "center"/>
+    <center>
+    </br>
+    </br>
+    <table
+    width = 85%
+    border = "0"
+    bgcolor = "#DFFFDF">
+      <tr>
+        <th colspan = "3">
+          <h1>The Adorable Showdown</h1>
+          <hr
+          color = "#005F00"
+          size = "5"
+          width = 75%
+          align = "center"/>
+        </th>
+      </tr>
+      <tr>
+        <td width = 40%><center><h1>
+          <a href = "animala.html" target = "_blank">
+            <blockquote>
+            <div class="container">
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">1 / 5</div>
+                <img src = "Image/dogind.JPG" style="width:60%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">2 / 5</div>
+                <img src="Image/rottweiler.JPG" style="width:60%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">3 / 5</div>
+                <img src="Image/pug.JPG" style="width:60%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">4 / 5</div>
+                <img src="Image/pom.JPG" style="width:29%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">5 / 5</div>
+                <img src="Image/kawaiii.JPG" style="width:27%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="row"
+                    align = "center">
+                <div class="column">
+                  <img class="demo cursor" src="Image/dogind.JPG" style="width:100%" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/rottweiler.JPG" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/pug.JPG" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/pom.JPG" style="width:50%" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/kawaiii.JPG" style="width:45%" onclick="currentSlide(5)">
+                </div>
+              </div>
+            </div>
+          </blockquote>
+          </a>
+        </td></center></h1>
+        <td width = 5%></td>
+        <td width = 40%><center><h1>
+          <a href = "animalb.html"
+          target = "_blank">
+          <blockquote>
+          <div class="container">
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">1 / 5</div>
+              <img src = "Image/catind.JPG" style="width:63%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">2 / 5</div>
+              <img src="Image/orange.JPG" style="width:48%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">3 / 5</div>
+              <img src="Image/brown.JPG" style="width:52%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">4 / 5</div>
+              <img src="Image/longFacedDD.JPG" style="width:29%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">5 / 5</div>
+              <img src="Image/-w-.JPG" style="width:57%">
+            </div>
+
+            <a class="prev" onclick="plusSlides1(-1)">❮</a>
+            <a class="next" onclick="plusSlides1(1)">❯</a>
+
+            <div class="caption-container">
+              <p id="caption1"></p>
+            </div>
+
+            <div class="row"
+                  align = "center">
+              <div class="column">
+                <img class="demo1 cursor" src="Image/catind.JPG" style="width:100%" onclick="currentSlide1(1)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/orange.JPG" style="width:75%" onclick="currentSlide1(2)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/brown.JPG" style="width:80%" onclick="currentSlide1(3)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/longFacedDD.JPG" style="width:45%" onclick="currentSlide1(4)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/-w-.JPG" style="width:90%" onclick="currentSlide1(5)">
+              </div>
+            </div>
+          </div>
+        </blockquote>
+          </a>
+        </td></center></h1>
+      </tr>
+      <tr>
+        <td>
+        <div align = "justify"><blockquote>
+          <center><h3><i>Canis lupus familiaris </i></h3></center>
+
+          Also commonly known as the domesticated dog, you
+          have your loyal friend who follows you around the
+          house. Dogs are avalible in all sorts of sizes,
+          colors and breeds, adorable in every way, and quite
+          frankly one of our dearest treasures on Earth.
+        </br>
+        </br>
+          <b>
+          On This website we delve into the history of our
+          "Man's Best Friend", and desipher their transformation
+          from wolf to corgi, with curtisy of yours truly
+          writing way too much than she wanted to.
+        </b>
+        </blockquote></div>
+        </td>
+        <td></td>
+        <td>
+          <div align = "justify"><blockquote>
+            <center><h3><i>Felis catus</i></h3></center>
+            Also known as the domesticated cat, you have your
+            loyal lap friend who won't get off your computer.
+            Avalible in all sorts of sizes, colors and breeds.
+            Pay heed to their elegance, temper, and charecteristics,
+            because we are about to uncover on of humanity's
+            gems.
+          </br>
+          </br>
+            <b>
+              Delve into this websites' many pictures, brief
+              comments, a dissection of their behavior,
+              and an enstalment of history on our furry little
+              companions.
+          </b>
+          </blockquote></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan = 3>
+          </br>
+          </br>
+          <hr
+          color = "#005F00"
+          size = "5"
+          width = 75%
+          align = "center"/>
+          </br>
+          </br>
+              <center><a href = "#top">Back to Top</a></center>
+            </br>
+
+        </td>
+      </tr>
+
+      </table>
+    </br>
+    </br>
+  </center>
+    </body>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <script>
+    var slideIndex1 = 1;
+    showSlides1(slideIndex1);
+
+    function plusSlides1(n) {
+      showSlides1(slideIndex1 += n);
+    }
+
+    function currentSlide1(n) {
+      showSlides1(slideIndex1 = n);
+    }
+
+    function showSlides1(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides1");
+      var dots = document.getElementsByClassName("demo1");
+      var captionText = document.getElementById("caption1");
+      if (n > slides.length) {slideIndex1 = 1}
+      if (n < 1) {slideIndex1 = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex1-1].style.display = "block";
+      dots[slideIndex1-1].className += " active";
+      captionText.innerHTML = dots[slideIndex1-1].alt;
+    }
+    </script>
+    </html>

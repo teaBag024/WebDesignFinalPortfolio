@@ -1,0 +1,25 @@
+(--Start of Message--)
+For my project I decided to make a web page.
+
+To access said web page
+1. left click on "index.html"
+2. Open the web-page in your preferred
+browser.(Google Chrome works best!)
+
+I made it interactive and added a
+couple videos so feel free to
+click around (^-^).
+
+- Please ignore the .css files
+and the "img" folder.
+- Please do not delete them because without
+them, the images and web styling do not
+show.
+
+Thank You!
+
+If there are any issues just email me.
+I'll see if I can fix it.
+~ Lilian (24lzeng@student.dasd.org)
+
+(--End of message--)

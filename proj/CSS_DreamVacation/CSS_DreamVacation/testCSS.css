@@ -1,0 +1,137 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  background-color: #DFFFDF;
+}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  background-color: #41BAC1;
+  color: White;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.headr {
+  background-size: cover;
+  min-height: 100%;
+
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #DFFFDF;
+
+  background-attachment: fixed;
+}
+.indHeadr{
+    background-image: url("Img/head.JPG");
+}
+
+.textSection {
+  background-color:#642580;
+  padding:50px 80px;
+}
+
+
+
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  width: auto;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  margin-top: 0%;
+  width: auto;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #333;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  width: auto;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.divz{
+  margin : auto;
+  width: 70%;
+}
+.Rtext{
+  font: 15px "times new roman", serif;
+  color: black;
+}
+.Htext{
+  font: 30px "Garmond", serif;
+  color: black;
+}
+.Ttext{
+  font: 45px "Brush Script MT", "Brush Script Std", cursive;
+  color: white;
+}
+.R {
+  float: right;
+}
+.L {
+  float: left ;
+}
+
+#w35 {width: 35%;
+      background-color: #7cb075;}
+#w60 {width: 60%;
+      background-color: #5F875F;}

@@ -1,0 +1,78 @@
+.headr {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
+}
+
+
+.caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+  z-index: 100;
+}
+
+.border {
+  background-color: #000;
+  border-radius: 10px;
+  opacity: 75%;
+  color: White;
+  padding: 1.5%;
+
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  margin: 0.5%;
+}
+
+
+
+
+
+
+
+
+.Head1 {
+  background-image: url("img/1.jpg");
+  min-height: 95%;
+}
+.Head2 {
+  background-image: url("img/2.JPG");
+  min-height: 95%;
+}
+.Head3 {
+  background-image: url("img/3.PnG");
+  min-height: 95%;
+}
+.Head4 {
+  background-image: url("img/4.PnG");
+  min-height: 95%;
+}
+.Head5 {
+  background-image: url("img/5.JPG");
+  min-height: 95%;
+}
+.Head10 {
+  background-image: url("img/10.JPG");
+  min-height: 95%;
+}
+.Head11 {
+  background-image: url("img/11.JPG");
+  min-height: 95%;
+}
+.Head12 {
+  background-image: url("img/12.JPG");
+  min-height: 95%;
+}
+.Head7 {
+  background-image: url("img/7.JPG");
+  min-height: 95%;
+}
+.Head16 {
+  background-image: url("img/16.JPG");
+  min-height: 95%;
+}

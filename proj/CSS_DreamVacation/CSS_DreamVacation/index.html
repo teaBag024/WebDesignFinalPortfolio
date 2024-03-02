@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS_DreamVacation</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="ParallaxStyle.css">
+    <link rel="stylesheet" type="text/css" href="NavStyle.css">
+    <link rel="stylesheet" type="text/css" href="Dstyle.css">
+    <link rel="stylesheet" type="text/css" href="slideStlye.css">
+
+  </head>
+  <body>
+    <a id="top"></a>
+    <div class="headr , mySlides , Head1 , fade">
+        <div class = "caption">
+          <span class = "border">Plan Your Trip to Arcadia National Park</span>
+        </div>
+    </div>
+    <div class="headr , mySlides , Head2 , fade">
+        <div class = "caption">
+          <span class = "border">Plan Your Trip to Arcadia National Park</span>
+        </div>
+    </div>
+    <div class="headr , mySlides , Head3 , fade">
+        <div class = "caption">
+          <span class = "border">Plan Your Trip to Arcadia National Park</span>
+        </div>
+    </div>
+    <div class="headr , mySlides , Head4 , fade">
+        <div class = "caption">
+          <span class = "border">Plan Your Trip to Arcadia National Park</span>
+        </div>
+    </div>
+    <div class="headr , mySlides , Head5 , fade">
+        <div class = "caption">
+          <span class = "border">Plan Your Trip to Arcadia National Park</span>
+        </div>
+    </div>
+    <div class="headr , mySlides , Head6 , fade">
+        <div class = "caption">
+          <span class = "border">Plan Your Trip to Arcadia National Park</span>
+        </div>
+    </div>
+      <a name = "title"></a>
+      <div>
+        <div class="navbar">
+          <a href="#home">Home</a>
+          <a href="About.html" target = "_blank">About</a>
+          <a href = "Fun.html" target = "_blank">Fun!</a>
+        </div>
+      </div>
+
+      <button id = "d-l" class = "d-btn" onclick="isTheme()"><i class="material-icons">brightness_4</i></button>
+      <div class = "bar">
+        <div class = "scroll">
+          <a href = "#title">
+            <i class="material-icons"
+                style = "color: white;">&#xe5cf;</i>
+          </a>
+        </div>
+      </div>
+
+      <div class = "divz">
+      </br></br>
+            <div id = "title" style = "width:80%;", class = "htext">
+              ~Arcadia National Park~
+            </div>
+            </br></br>
+            <div id = "head" , class = "ctext">
+              A peaceful, close to nature, yet still equiped with elements from
+              modern society vacation spot. Here, the world is of your taking. A plentiful
+              wildlife, teaming with that of differnt species of animals most
+              natural scenaries, and a splendid array of hiking trails, and attractions.
+            </div>
+            <div>
+                <div id = "content" , class = "Rtext" style = "width: 20%;">
+                    <img src = "Img/map.JPG"
+                          width = "100%"
+                          alt = "Arcadia Map">
+                </div>
+                <div id = "text" , class = "Rtext" style = "width: 69%;">
+                  Arcadia National Park is one of a kind. Located in Maine, US, it sits roughly 100 miles from the US/Canadian
+                  border. By that statement, it is to assume that Arcadia experiences rather colder weathers. Aside from such
+                  Arcadia is quite a beauty to visit. Not only does it exhibit all four seasons, but all in it's own grace and
+                  beauty. Arcadia could also be known for it's abundant wildlife. Not only does Acadia hold abundance in mammals
+                  birds, forestry, and so many more, it is also a habitat, with it's natural and mostly untouched natural sceneries
+                  to go along with. Arcadia's tide pools are quite facinating, along ceritain areas, visitors are also allowed to
+                  pick up, and learn about the ocean-life. Arcadia Borders a small town also known as Bar Harbor. Even if it is a
+                  rather small town, others of such size cannot compete with its hustle-and-bustle, its life and dynamics.
+                  Arcadia is also known for its lobster. Seeing how Arcdia, borders the sea, is no exception to Maine's renown
+                  lobsters. Arcadia is also known for it's wild blueberries which (at the right season) you can find in abundance.
+                </div>
+            </div>
+            </br>
+          <hr
+          color = "#254535"
+          size = "5"
+          width = 80%
+          align = "center"/>
+
+          <a href = "Fun.html">
+            <div class = "Ttext , btn">
+              Click here to see more Fun!
+            </div>
+          </a>
+
+          <div id = "other" class = "Rtext">
+            <img src = "Img/trail.jpg" width = 25%;>
+            <img src = "Img/geddy2.png" width = 36%;>
+            <img src = "Img/BEEHIVE.png" width = 36%;>
+          </div>
+
+          <a href = "About.html">
+            <div class = "Ttext , btn">
+              Click for more About Arcadia!
+            </div>
+          </a>
+      </div>
+    </br></br></br>
+
+<div class = "bar , ctext">
+    <a href = "#top"><button id = up class = "scroll">
+      <i class="material-icons">&#xe318;</i>
+    </button></a>
+</div>
+  </body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 3 seconds
+}
+</script>
+
+<script>
+
+function isTheme() {
+   var element = document.body;
+   element.classList.toggle("d-mode");
+   var element = document.getElementById("d-l");
+   element.classList.toggle("l-btn");
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+      if (this.hash != "") {
+        console.log("hash: " + this.hash);
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+
+</html>

@@ -1,0 +1,79 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: White;
+}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  background-color: #41BAC1;
+  color: White;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+h3 {
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font: 20px "Lato", sans-serif;
+  color: white;
+  text-align:center;
+}
+
+.textSection {
+  background-color:#642580;
+  padding:50px 80px;
+}
+
+.cd-logo {
+  background-image: url("Img/CoderDojo.png");
+  background-size: contain;
+  min-height: 100%;
+}
+
+.cake {
+    background-image: url("Img/img_parallax.JPG");
+}
+
+.kitchen-equipment {
+  background-image: url("Img/utensils.JPG");
+}
+
+.cake-ingredients {
+  background-image: url("Img/ingredients.jpg");
+}
+
+.mixer {
+  background-image: url("Img/mixer.jpg");
+}
+
+.oven {
+  background-image: url("Img/oven.jpg");
+}
+
+.rosecake {
+  background-image: url("Img/rosecake.jpg");
+}
+
+.cd-logo, .cake, .kitchen-equipment, .cake-ingredients, .mixer, .oven, .rosecake {
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #642580;
+
+  background-attachment: fixed;
+}
+
+.cake, .kitchen-equipment, .cake-ingredients, .mixer, .oven, .rosecake {
+    opacity: 0.7;
+    background-size: cover;
+    min-height: 100%;
+}

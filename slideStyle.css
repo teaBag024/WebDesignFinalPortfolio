@@ -1,0 +1,12 @@
+figure{
+     width: 100%;
+     margin: 0.5% 0.5% -1% 0.5%;
+     z-index: -1;
+}
+figure img{
+     z-index: -1;
+     margin-top: 0.6%;
+     object-fit: cover;
+     height: 685px;
+     width: 101%;
+}

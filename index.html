@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>WebDesign&Dev | Portfolio</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+
+          <link rel = "stylesheet" type = "text/css" href="style.css">
+          <link rel = "stylesheet" type = "text/css" href="barStyle.css">
+          <link rel = "stylesheet" type = "text/css" href="slideStyle.css">
+          <link rel = "stylesheet" type = "text/css" href="listStyle.css">
+
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+          <script language="Javascript" type="text/javascript">
+              myPix = new Array("img/slide2.jpg","img/slide1.png", "img/slide3.jpg", "img/slide4.png", "img/slide5.jpg")
+              thisAd = -1
+              imgCt = (myPix.length)
+
+              function rotate(){
+               if(document.images){
+                 thisAd++
+                 if (thisAd == imgCt){
+                   thisAd = 0
+                 }
+                 document.myPicture.src = myPix[thisAd]
+                 setTimeout("rotate()", 5 * 1000)
+               }
+             }
+          </script>
+          <script language="Javascript" type="text/javascript">
+               dayName = new Array ("Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday");
+               monName = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
+               now = new Date();
+
+               function startTime() {
+     	          var today = new Date();
+     	          var h = today.getHours();
+     	          var m = today.getMinutes();
+     	          var s = today.getSeconds();
+     	          m = checkTime(m);
+     	          s = checkTime(s);
+     	          document.getElementById('txt').innerHTML =
+                         "<h3>"+
+                         dayName[now.getDay()]+ ", "+
+                         monName[now.getMonth()] + ". " +
+                         now.getDate()  + " " + (now.getYear()+1900)+" "+
+                         h + ":" + m
+     	          var t = setTimeout(startTime, 500);
+               }
+
+     	    function checkTime(i) {
+     	      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+     	      return i;
+     	    }
+          </script>
+          <script language="Javascript" type="text/javascript">
+               function getRandom(min, max) {
+                    return Math.floor(Math.random() * (max - min) + min);
+               }
+               function genMessage(){
+                    qs = ['"You should learn how to program."','"Coding is the language of the future..."','"Everybody should learn to program..."','"Talk is cheap. Show me the code."', '"Truth can only be found in one place: the code."', 'There are two ways to write error-free programs; only the third works.']
+
+                    num = getRandom(0,qs.length);
+
+                    document.getElementById('InMessage').innerHTML =
+                         qs[num] ;
+               }
+          </script>
+          <script language="Javascript" type="text/javascript">
+               if (document.images) {
+                 C5P2W_tn = new Image
+                 C5P2I_tn = new Image
+                 C5P2W_tn.src = "img/C5P2_W.PNG"
+                 C5P2I_tn.src = "img/C5P2_I.png"
+
+                 C56APW_tn = new Image
+                 C56API_tn = new Image
+                 C56APW_tn.src = "img/C56AP_W.PNG"
+                 C56API_tn.src = "img/C56AP_I.png"
+
+                 C56APRW_tn = new Image
+                 C56APRI_tn = new Image
+                 C56APRW_tn.src = "img/C56APR_W.PNG"
+                 C56APRI_tn.src = "img/C56AP_I.png"
+
+                 multW_tn = new Image
+                 multI_tn = new Image
+                 multW_tn.src = "img/Mult_W.PNG"
+                 multI_tn.src = "img/Mult_I.png"
+
+                 rBallW_tn = new Image
+                 rBallI_tn = new Image
+                 rBallW_tn.src = "img/rBall_W.PNG"
+                 rBallI_tn.src = "img/rBall_I.png"
+
+                 pultzW_tn = new Image
+                 pultzI_tn = new Image
+                 pultzW_tn.src = "img/pultz_W.PNG"
+                 pultzI_tn.src = "img/pultz_I.png"
+
+                 parrW_tn = new Image
+                 parrI_tn = new Image
+                 parrW_tn.src = "img/parr_W.PNG"
+                 parrI_tn.src = "img/parr_I.png"
+
+                 linkW_tn = new Image
+                 linkI_tn = new Image
+                 linkW_tn.src = "img/Link_W.PNG"
+                 linkI_tn.src = "img/Link_I.png"
+
+                 dVacaW_tn = new Image
+                 dVacaI_tn = new Image
+                 dVacaW_tn.src = "img/dVaca_W.PNG"
+                 dVacaI_tn.src = "img/dVaca_I.png"
+
+                 KotsuW_tn = new Image
+                 KotsuI_tn = new Image
+                 KotsuW_tn.src = "img/Kotsu_W.PNG"
+                 KotsuI_tn.src = "img/Kotsu_I.png"
+
+                 jSTIW_tn = new Image
+                 jSTII_tn = new Image
+                 jSTIW_tn.src = "img/JST&I_W.PNG"
+                 jSTII_tn.src = "img/JST&I_I.png"
+
+                 dVacaRW_tn = new Image
+                 dVacaRI_tn = new Image
+                 dVacaRW_tn.src = "img/dVacaR_W.PNG"
+                 dVacaRI_tn.src = "img/dVaca_I.png"
+
+                 espW_tn = new Image
+                 espI_tn = new Image
+                 espW_tn.src = "img/esp_W.PNG"
+                 espI_tn.src = "img/esp_I.png"
+
+                 englishW_tn = new Image
+                 englishI_tn = new Image
+                 englishW_tn.src = "img/english_W.PNG"
+                 englishI_tn.src = "img/english_I.png"
+
+                 bioW_tn = new Image
+                 bioI_tn = new Image
+                 bioW_tn.src = "img/bio_W.PNG"
+                 bioI_tn.src = "img/bio_I.png"
+
+               }else {
+                 C5P2W_tn = ""
+                 C5P2I_tn = ""
+                 document.C5P2_tn = ""
+
+                 C56APW_tn = ""
+                 C56API_tn = ""
+                 document.C56AP_tn = ""
+
+                 C56APRW_tn = ""
+                 C56APRI_tn = ""
+                 document.C56APR_tn = ""
+
+                 multW_tn = ""
+                 multI_tn = ""
+                 document.mult_tn = ""
+
+                 rBallW_tn = ""
+                 rBallI_tn = ""
+                 document.rBall_tn = ""
+
+                 pultzW_tn = ""
+                 pultzI_tn = ""
+                 document.pultz_tn = ""
+
+                 parrW_tn = ""
+                 parrI_tn = ""
+                 document.parr_tn = ""
+
+                 linkW_tn = ""
+                 linkI_tn = ""
+                 document.link_tn = ""
+
+                 dVacaW_tn = ""
+                 dVacaI_tn = ""
+                 document.dVaca_tn = ""
+
+                 KotsuW_tn = ""
+                 KotsuI_tn = ""
+                 document.Kotsu_tn = ""
+
+                 jSTIW_tn = ""
+                 jSTII_tn = ""
+                 document.jSTI_tn = ""
+
+                 dVacaR_tn = ""
+                 dVacaR_tn = ""
+                 document.dVacaR_tn = ""
+
+                 espW_tn = ""
+                 espI_tn = ""
+                 document.esp_tn = ""
+
+                 englishW_tn = ""
+                 englishI_tn = ""
+                 document.english_tn = ""
+
+                 bioW_tn = ""
+                 bioI_tn = ""
+                 document.bio_tn = ""
+               }
+          </script>
+          <script language="Javascript" type="text/javascript">
+               $(document).ready(function(){
+                    window.onscroll = function() {
+                         sticky();
+                         scrollBar();
+                    }
+                    function sticky() {
+                         var scrollBottom = (document.body.scrollTop || document.documentElement.scrollTop) + document.documentElement.clientHeight;
+                         var x = $("footer").offset();
+                         var img = document.getElementById("img").getBoundingClientRect();
+                         var iHeight = img.height;
+
+                         if(scrollBottom >= (x.top)){
+                              document.getElementById('img').style.position = "absolute";
+                              var insert = x.top - iHeight
+                              document.getElementById('img').style.top = (insert + "px");
+                         }
+                         else{
+                              document.getElementById('img').style.position = "fixed";
+                              var insert = document.documentElement.clientHeight - iHeight;
+                              document.getElementById('img').style.top = ( insert + "px");
+                         }
+                    }
+                    function scrollBar() {
+                         var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+                         var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+                         var scrolled = (winScroll / height) * 100;
+                         document.getElementById("myBar").style.width = scrolled + "%";
+                    }
+               });
+          </script>
+          <script language="Javascript" type="text/javascript">
+               function page(a){
+                    var x = confirm ("Do you want to leave this site?");
+                    if(x){
+                         window.open(a, '_blank');
+                    }
+               }
+          </script>
+          <script language="Javascript" type="text/javascript">
+               function getName(){
+                    var name = prompt("What is your name?, Enter your name here");
+                    alert("Welcome to my portfolio, " + name + "!")
+                    document.getElementById("name").innerHTML = name
+               }
+          </script>
+     </head>
+     <body onload="rotate() , startTime() , genMessage()">
+          <a id = "Home"></a>
+          <nav>
+               <img src = "img/banner.png" width = "25%">
+               <a></a>
+               <a href = "https://www.facebook.com/" target="_blank">
+                    <i class="fa">&#xf082;</i>
+               </a>
+               <a href="https://twitter.com/TBag024" target="_blank">
+                    <i class="fa">&#xf099;</i>
+               </a>
+               <a href="https://accounts.snapchat.com/" target="_blank">
+                    <i class="fa">&#xf2ac;</i>
+               </a>
+               <a href="https://www.instagram.com/" target="_blank">
+                    <i class="fa">&#xf16d;</i>
+               </a>
+               <div id="nameHold">Hello, <span id = 'name'></span>
+                    <button onclick = "getName()">Click Me!</button>
+               </div>
+               <div id="txt"></div>
+
+          </nav>
+          <figure>
+               <img src="img/slide2.jpg" width = 100%
+                    name="myPicture" alt="Slideshow" >
+               <div id = "message">
+                    Welcome!
+                    <hr width ="80%"/>
+                    <div id = "InMessage"></div>
+               </div>
+          </figure>
+          <div class="progress-container">
+               <div class="progress-bar" id="myBar"></div>
+          </div>
+          <figcaption id = "Home">
+               <a href = "#Home"><li>Home</li></a>
+               <a href = "#HTML"><li>HTML</li></a>
+               <a href = "#CSS"><li>CSS</li></a>
+               <a href = "#JS"><li>JavaScript</li></a>
+               <a href = "#Other"><li>Other</li></a>
+          </figcaption>
+
+          <!-- The Course -->
+          <div class = "content">
+               <br><br><br>
+               <div class = "heading">The Course</div>
+               <!-- p: Course Description, Personal Experience -->
+               <p style = "width: 60%;">
+                    <b>Web Design & Development</b>
+                    <br><br>
+                    <span></span>Web and Design is a course to learn the basic forms of HTML, CSS, and JavaScript. Taught at Downingtown East Highschool by Mrs. Engard, Web and design is a fantastic buissness encore class to try out the edges of this growing work field.
+                    <br><br>
+                    <span></span><span></span>
+                    <b>Course Description: </b>
+                    <cite>
+                         "This course offers students the opportunity to express themselves creatively on the internet through self-published websites. They will utilize criteria to evaluate and analyze web pages in a variety of fields to create their own functional, engaging websites that encourage multiple visits. It familiarizes them with attractive and interactive design strategies. Topics include effective use of color, page design, navigation, publishing, and maintaining websites. Students will develop a basic understanding of HTML, CSS, and JavaScript."
+                    </cite>
+                    <span style="width:47.25%;">
+                         <br><b>Personal Experience</b><br><br>
+                         <span></span> I personally loved this course. It showed me my limits in patience and it taught me how to problem solve my way around tricky area. This course and the projects it presented helped me develop a stronger sense of logic and a different way of approaching things.
+                         <br><br>
+                         <span></span>As a student who considers persuing CS as a future career, I honestly think learning the basics of <i>HTML, CSS, </i>and <i>JavaScript</i> helps me re-think ways to comunicate to the compiler, and develop new ways of thinking and doing things.
+                    </span>
+                    <span style="width:47.25%;">
+                         <br>
+                         <span></span> This class has brought me joys and has brought me fustration. While the fustrations were temporary, the motivation that follows to finish or solve the issue brought more happiness when I long last finish the project.
+                         <br><br>
+                         <span></span> All in all, <i>Web Design and Development</i> has not only allowed me to grow as a person, but also to feed my passion as a programmer. I'd like to thank Mrs. Engard for enduring my endless pestering whenever I have questions and my stubborness and lack of code orginazation. Despite only been in "in-person" school for two weeks this year, I had a lot of fun in this class.
+                    </span>
+               </p>
+               <!-- aside: images when coding -->
+               <aside>
+                    <center>
+                         <img src = "img/aside1.png">
+                         <img src = "img/aside2.png">
+                    </center>
+               </aside>
+          </div>
+
+          <!-- HTML -->
+          <div class = "content" id = 'HTML'>
+               <br><br><br>
+               <div class = "heading" style="width:60%">Basic HTML</div>
+               <!-- p: basic HTML course description -->
+               <p style = "width:60%">
+                    <span style="width:47.25%;">
+                         <b>Tag, Basic Styles, and More</b>
+                         <br><br>
+                         <span></span> The beginning of the school year compromised of HTML at its basics. It was here that we learned the 5 basic tags, the inline style tags, link, lists, tables, and images.
+                    </span>
+                    <span style="width:47.25%;">
+
+                         <br><br>
+                         <span></span> The projects we worked on was fairly simple. When I look back, I seemed to have been having trouble with just finding content rather than the HTML portion itself.
+                    </span>
+                    <br><br><br>
+                    <span style="padding: 0;">
+                         <img src = "img/bHTML2.png" width = "33%">
+                         <img src = "img/bHTML1.png" width = "33%">
+                         <img src = "img/bHTML3.png" width = "33%">
+                    </span>
+               </p>
+               <!-- List of HTML projects -->
+               <aside>
+                         <b>Projects</b>
+                         <ol type="I">
+                              <li>Chapter 5 – Practice2</li>
+                              <ul>
+                                   <li>Sept. 25th, 2020 - Oct. 2nd, 2020</li>
+                              </ul>
+                              <br>
+                              <li>Animal Project</li>
+                              <ul>
+                                   <li>Oct. 22nd, 2020 - Nov. 12th 2020</li>
+                              </ul>
+                              <br>
+                              <li>Multimedia Project</li>
+                              <ul>
+                                   <li>Jan. 11th, 2021 - Jan. 21st 2021</li>
+                              </ul>
+                              <br>
+                              <li>Form Project</li>
+                              <ul>
+                                   <li>Mar. 22nd, 2021 - Mar. 29th 2021</li>
+                              </ul>
+                              <br>
+                              <li>Table Project</li>
+                              <ul>
+                                   <li>Apr. 12th, 2021 - Apr. 19th 2021</li>
+                              </ul>
+                         </ol>
+               </aside>
+               <hr width= "80%" size = "3" color = "#152937">
+               <!-- project list -->
+               <center>
+                    <div class = "list">
+                         <!-- chapt5,p2 -->
+                         <aside>
+                              <img src = "img/C5P2_I.PNG" style="width:100%"
+                              name = "C5P2_tn" alt = "C5P2_tn" onclick="page('proj/Chapter5-Practice2/index.html')" onmouseover="document.C5P2_tn.src = C5P2W_tn.src" onmouseout="document.C5P2_tn.src = C5P2I_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/Chapter5-Practice2/index.html')">
+                              <h2>Chapter 5- Practice</h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Pick a topic – Your topic can be about any school subject (history, art, music, P.E., science, etc.). Create a webpage on the topic. It must include images and, inline styles."
+                                        <br><br>- Sept. 25th, 2020 - Oct. 2nd, 2020</i>
+                              </p>
+                              <p><span></span>
+                                   As my first website, I was really proud of it. Now looking back there is a lot I can improve upon. For this project, I choose the pencil because they are a facinating object. As a device to pass down knowledge or to take note of knowledge, the pencil existed alongside humans as long as language did.
+                              </p>
+                         </div>
+
+                         <!-- Animal Proj -->
+                         <aside>
+                              <img src = "img/C56AP_I.PNG" style="width:100%"
+                              name = "C56AP_tn" alt = "C56AP_tn" onclick="page('proj/Chapter5-6_AnimalProject/index.html')" onmouseover="document.C56AP_tn.src = C56APW_tn.src" onmouseout="document.C56AP_tn.src = C56API_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/Chapter5-6_AnimalProject/index.html')"><h2>Chapter 5-6 Animal Project</h2></a>
+                              <p>
+                                   <i>"You will be creating an animal information web site utilizing pictures you find on the internet and bio text." <br><br>- Oct. 22nd, 2020 - Nov. 12th 2020</i>
+                              </p>
+
+                              <p>
+                                   <span></span>The Animal project was a marking period final project. I decieded to put everything in a table and orginize the website in a grid-like fashion. It was also this project, where I first come into contanct with Javascript, and played with it on my own time.
+                              </p>
+                         </div>
+
+                         <hr width= "80%" size = "3" color = "#152937">
+
+                         <!-- Multimedia -->
+                         <aside>
+                              <img src = "img/Mult_I.PNG" style="width:100%" name = "mult_tn" alt = "mult_tn" onclick="page('proj/tutorial7-multimeda/jumbo.htm')" onmouseover="document.mult_tn.src = multW_tn.src" onmouseout="document.mult_tn.src = multI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/tutorial7-multimeda/jumbo.htm')"><h2>Multimedia Project</h2></a>
+                              <p>
+                                   <i>"Insert an audio clip and video clip with controls. Add a marqee element to the page.
+                                   <br><br>- Jan. 11th, 2021 - Jan. 21st 2021</i>
+                              </p>
+
+                              <p>In this project I learn to add audios and videos that I had previously downlowded. It was pretty nice to learn how to add media to my websites.</p>
+                         </div>
+
+                         <!-- Forms -->
+                         <aside>
+                              <img src = "img/rBall_I.PNG" style="width:100%" name = "rBall_tn" alt = "rBall_tn" onclick="page('proj/Forms-Practice2/survey.htm')" onmouseover="document.rBall_tn.src = rBallW_tn.src" onmouseout="document.rBall_tn.src = rBallI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/Forms-Practice2/survey.htm')"><h2>Forms Project</h2></a>
+                              <p>
+                                   <i>"Use the attached PDFs to add fields to create a survey. Use the attached tutorial to ensure that you have all the requirements."
+                                        <br><br>- Mar. 22nd, 2021 - Mar. 29th 2021</i>
+                              </p>
+
+                              <p>
+                                   In this project, we learned to create a form. This could be applied to taking in user input. While we didn't learn how to store user input in a database, we did learn how to create a form.
+                              </p>
+                         </div>
+
+                         <!-- Tables -->
+                         <aside>
+                              <img src = "img/pultz_I.PNG" style="width:100%" name = "pultz_tn" alt = "pultz_tn" onclick="page('proj/PulitzerPrizeTable/index.html')" onmouseover="document.pultz_tn.src = pultzW_tn.src" onmouseout="document.pultz_tn.src = pultzI_tn.src">
+
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/PulitzerPrizeTable/index.html')"><h2>Advances Tables Project</h2></a>
+                              <p>
+                                   <i>
+                                        "Create a table (based on the winners of the pulitzer prize) that will match the image given image."
+                                        <br><br>- Apr. 12th, 2021 - Apr. 19th 2021
+                                   </i>
+                              </p>
+
+                              <p>
+                                   In this project we learned how to apply more advanced table styles to a a table. This project allowed me to practice reverse enginner the table. While there were hints and directions I could follow, in trying the harder way, this project allowed me to think in a different approach.
+                              </p>
+                         </div>
+                    </div>
+               </center>
+          </div>
+
+          <!-- CSS -->
+          <div class = "content" id = 'CSS'>
+               <br><br><br>
+               <div class = "heading" style="width:60%">CSS</div>
+               <!-- p: CSS course description -->
+               <p style = "width:60%">
+                    <span style="width:47.25%;">
+                         <b>Styles, Styles, and Fashion</b>
+                         <br><br>
+                         <span></span> In this half, we learned the basics of CSS. This inclued inline styles, internal stylesheets and external stylesheets. This can be page styling, div or section styling, and even image stylings.
+                    </span>
+                    <span style="width:47.25%;">
+
+                         <br><br>
+                         <span></span> The projects here were a little harder, but I started to understand it more as I played with the ideas and the concepts.
+                    </span>
+                    <br><br><br>
+                    <span style="padding: 0;">
+                         <img src = "img/bCSS2.png" width = "33%">
+                         <img src = "img/bCSS1.png" width = "33%">
+                         <img src = "img/bCSS3.png" width = "33%">
+                    </span>
+               </p>
+               <!-- List of CSS projects -->
+               <aside>
+                         <b>Projects</b>
+                         <ol type="I">
+                              <li>Lincoln Project</li>
+                              <ul>
+                                   <li>Nov. 30th, 2020 - Dec. 2nd, 2020</li>
+                              </ul>
+                              <br>
+                              <li>Parrallex Scroll</li>
+                              <ul>
+                                   <li>Dec. 7th, 2020 - Dec. 20th, 2020</li>
+                              </ul>
+                              <br>
+                              <li>Dream Vacation Project</li>
+                              <ul>
+                                   <li>Dec. 14th, 2020 - Jan. 8th, 2021</li>
+                              </ul>
+                              <br>
+                              <li>Komatsu Project</li>
+                              <ul>
+                                   <li>Apr. 26th, 2021 - May. 4th, 2021</li>
+                              </ul>
+                              <li>Animal Project Revised</li>
+                              <ul>
+                                   <li>June. 1st, 2021 - June. 8th, 2021</li>
+                              </ul>
+                         </ol>
+               </aside>
+               <hr width= "80%" size = "3" color = "#152937">
+               <!-- CSS project list -->
+               <center>
+                    <div class = "list">
+
+                         <!-- Lincoln Project -->
+                         <aside>
+                              <img src = "img/Link_I.PNG" style="width:100%" name = "link_tn" alt = "link_tn"  onclick="page('proj/CSS_Lincoln/index.html')" onmouseover="document.link_tn.src = linkW_tn.src" onmouseout="document.link_tn.src = linkI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/CSS_Lincoln/index.html')">
+                              <h2>Lincoln Project</h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Turn the given document into one that looks like the picture using CSS." <br><br>- Nov. 30th, 2020 - Dec. 2nd, 2020</i>
+                              </p>
+
+                              <p>
+                                   This project was my first project using CSS. It was also the first project where I reversed enginnered a website from a picture. CSS was honestly a little tricky for me so far.
+                              </p>
+                         </div>
+
+                         <!--ParrallexScroll-->
+                         <aside>
+                              <img src = "img/parr_I.PNG" style="width:100%" name = "parr_tn" alt = "parr_tn" onclick = "page('proj/CSS_ParallexScroll/index.html')" onmouseover="document.parr_tn.src = parrW_tn.src" onmouseout="document.parr_tn.src = parrI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick = "page('proj/CSS_ParallexScroll/index.html')">
+                              <h2>Parrallex Scroll</h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Using the directions and document, create a website with fixed images."
+                                        <br><br> - Dec. 7th, 2020 - Dec. 20th, 2020</i>
+                              </p>
+                              <p>
+                                   In this project, I am exposed to the idea of having a fixed image as a background. This will impact my future websites, and there would be re-occuring themes of a fixed background.
+                              </p>
+                         </div>
+
+                         <!-- Dream VACA -->
+                         <aside>
+                              <img src = "img/dVaca_I.PNG" style="width:100%" name = "dVaca_tn" alt = "dVaca_tn" onclick="page('proj/CSS_DreamVacation/CSS_DreamVacation/index.html')" onmouseover="document.dVaca_tn.src = dVacaW_tn.src" onmouseout="document.dVaca_tn.src = dVacaI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/CSS_DreamVacation/CSS_DreamVacation/index.html')"><h2>Dream Vacation Project</h2></a>
+                              <p>
+                                   <i>"Create a three paged website on the topic of a dream vacation site.
+
+                                        <br><br>- Dec. 14th, 2020 - Jan. 8th, 2021</i>
+                              </p>
+
+                              <p>
+                                   This project was my third project from scratch, and it was also where I pushed myself to think at new levels. Starting from this project, I started using divs instead of tables and I also continue to fiddle around with Javascript.
+                              </p>
+                         </div>
+
+                         <hr width= "80%" size = "3" color = "#152937">
+                         <!-- Komatsu -->
+                         <aside>
+                                   <img src = "img/Kotsu_I.PNG" style="width:100%" name = "Kotsu_tn" alt = "Kotsu_tn"  onclick="page('proj/ACSS_Komatsu/tb_komatsu.html')" onmouseover="document.Kotsu_tn.src = KotsuW_tn.src" onmouseout="document.Kotsu_tn.src = KotsuI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick = "page('proj/ACSS_Komatsu/tb_komatsu.html')"><h2>Komatsu Project</h2></a>
+                              <p>
+                                   <i>"Following instructions, edit the given document to make it look like the example images."<br><br>- Apr. 26th, 2021 - May. 4th, 2021</i>
+                              </p>
+
+                              <p>
+                                   While it was labeled as advanced CSS, I didn't really think it was too advanced. I had encountered almost all of its contents prior to this project. That being said, I did find new tags that I found interesting, and even used them in this project.
+                              </p>
+                         </div>
+
+                         <!-- A revised -->
+                         <aside>
+                              <img src = "img/C56AP_I.PNG" style="width:100%" name = "C56APR_tn" alt = "Kotsu_tn"  onclick="page('proj/AProject-Rev/index.html')" onmouseover="document.C56APR_tn.src = C56APRW_tn.src" onmouseout="document.C56APR_tn.src = C56APRI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick = "page('proj/AProject-Rev/index.html')"><h2>Animal Project Revised</h2></a>
+                              <p>
+                                   <i>"Revise the Animal Project and add JavaScript and Advanced CSS"<br><br>- June. 1st, 2021 - June. 8th, 2021</i>
+                              </p>
+
+                              <p>
+                                   This project wasn't as eventful as any of the other ones, expecially in the light of createing this portfolio as my final project. Nontheless, it was good practice and it was also nice to see my improvements.
+                              </p>
+                         </div>
+                    </div>
+               </center>
+          </div>
+
+          <!-- JavaScript -->
+          <div class = "content" id = 'JS'>
+               <br><br><br>
+               <div class = "heading" style="width:60%">JavaScript</div>
+               <!-- p: JS course description -->
+               <p style = "width:60%">
+                    <span style="width: 47.25%;">
+                         <b>Tricks with Code</b>
+                         <br><br>
+                         <span></span> In JavaScript we learned how to set up alerts, write text from JavaScript to the main document, make a(n) (automatic) slideshow, and fetch the date and time.
+                         <br><br>
+                         <span></span> I had a little bit of experience with JavaScript outside of class in KhanAcademy, but what I experienced here in the course is a lot different then online. I still struggle a little when coding in JavaScript.
+                         <br><br>
+                         <span></span> Coding in JavaScript was one of the reasons why I enjoyed Web and Design. It was hard but I enjoyed the challenge presented to me and the satisfaction I recived when I solved the issues.
+
+                    </span>
+                    <span style="width: 45%; padding-left: 2.25%;">
+                         <img src = "img/bJS.png" width = "100%">
+                    </span>
+               </p>
+               <!-- List of JS projects -->
+               <aside>
+                         <b>Projects</b>
+                         <ol type="I">
+                              <li>Text and Images Project</li>
+                              <ul>
+                                   <li>Jan. 26th, 2021 - Feb. 19th, 2021</li>
+                              </ul>
+                              <br>
+                              <li>Dream Vacation Revised</li>
+                              <ul>
+                                   <li>Feb. 22nd, 2021 - Apr. 4th, 2021</li>
+                              </ul>
+                         </ol>
+               </aside>
+               <hr width= "80%" size = "3" color = "#152937">
+               <!-- JS project list -->
+               <center>
+                    <div class = "list">
+                         <!--Javascript 1&2-->
+                         <aside>
+                              <a onclick="page('proj/Excersise2/index.html')">
+                                   <img src = "img/JST&I_I.PNG" style="width:100%" name = "jSTI_tn" alt = "jSTI_tn" onmouseover="document.jSTI_tn.src = jSTIW_tn.src" onmouseout="document.jSTI_tn.src = jSTII_tn.src">
+                              </a>
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/Excersise2/index.html')">
+                              <h2>Javascript basic texts and images </h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Create a website with Javascript images and texts." - Jan. 26th, 2021 - Feb. 19th, 2021</i>
+                              </p>
+                              <p>
+                                   Even if I had already dealt with JavaScript prior to this project, it still didn't make trying to debug code even better. It took me some time to customize the code from the lessons.
+                              </p>
+                         </div>
+
+                         <!--Dream 2.0-->
+                         <aside>
+                              <a onclick="page('proj/CSS_DreamVacation/+JavaScript/index.html')">
+                                   <img src = "img/dVaca_I.PNG" style="width:100%" name = "dVacaR_tn" alt = "dVaca_tn" onmouseover="document.dVacaR_tn.src = dVacaRW_tn.src" onmouseout="document.dVacaR_tn.src = dVacaRI_tn.src">
+                              </a>
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/CSS_DreamVacation/+JavaScript/index.html')">
+                              <h2>Dream Vacation Revised</h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Revise the Dream Vacation project and add javascript to it." <br><br>- Feb. 22nd, 2021 - Apr. 4th, 2021</i>
+                              </p>
+                              <p>
+                                   This project was one of the hardest projects because my original code was very messy. It was hard to tell where I was and often got confused as to where I was and the constant scrolling in the repetative code made it very tedious.
+                              </p>
+                         </div>
+               </center>
+          </div>
+
+          <!-- in real world application -->
+          <div class = "content" id = 'Other'>
+               <br><br><br>
+               <div class = "heading">Side Projects</div>
+               <!-- p: other projects description -->
+               <p style = "width:60%">
+                    <span style="width:47.25%;">
+                         <b>Outside of Class</b>
+                         <br><br>
+                         <span></span> I also spent time outside of class working with HTML, CSS, and JavaScript. This was not only to familiar myself more with the concepts, but to give myself more time to practice.
+                         <br><br>
+                         <span></span> I could also use this time to play with new concepts and apply new topics a scenerios and play with the results. I was nice to create more issues for me to troubleshoot, and it was satisfying watching my understanding of the concepts increase.
+                    </span>
+                    <span style="width:45%; padding-left: 2.25%;">
+                              <img src = "img/bOther.png" width = "100%">
+                    </span>
+               </p>
+               <!-- List of other projects -->
+               <aside>
+                         <b>Projects</b>
+                         <ol type="I">
+                              <li>Spanish Newspaper</li>
+                              <ul>
+                                   <li>Jan. 6th, 2021 - Jan. 8th, 2021</li>
+                              </ul>
+                              <br>
+                              <li>English Infographic</li>
+                              <ul>
+                                   <li>Jan. 19th, 2021 - Jan. 28th, 2021</li>
+                              </ul>
+                              <br>
+                              <li>Biology Infographic</li>
+                              <ul>
+                                   <li>Mar. 22nd, 2021 - Apr. 18th, 2021</li>
+                              </ul>
+                         </ol>
+               </aside>
+               <hr width= "80%" size = "3" color = "#152937">
+               <!-- other project list -->
+               <center>
+                    <div class = "list">
+                         <!--First (Spanish)-->
+                         <aside>
+                              <img src = "img/esp_I.PNG" style="width:100%" name = "esp_tn" alt = "esp_tn"  onclick = "page('proj/other/Newspaper (w17t5)/index.html')" onmouseover="document.esp_tn.src = espW_tn.src" onmouseout="document.esp_tn.src = espI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick = "page('proj/other/Newspaper (w17t5)/index.html')">
+                              <h2>Spanish - Newspaper</h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Create a spanish newspaper based off of current events." <br><br>- Jan. 6th, 2021 - Jan. 8th, 2021</i>
+                              </p>
+                              <p>
+                                   For this project, I actually had noticed an embed feature on youtube and wanted to try it out. This was before learning how to embed multimedia. I wrote about January 5th, "insurrection" at the White House.
+                              </p>
+                         </div>
+
+                         <!--second (English)-->
+                         <aside>
+                              <img src = "img/english_I.PNG" style="width:100%" name = "english_tn" alt = "english_tn" onclick="page('proj/other/Infographic/index.html')" onmouseover="document.english_tn.src = englishW_tn.src" onmouseout="document.english_tn.src = englishI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/other/Infographic/index.html')">
+                              <h2>English - Infographic</h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Work with a partner to create an Infographic on an awareness topic." <br><br>- Jan. 19th, 2021 - Jan. 28th, 2021</i>
+                              </p>
+                              <p> For this project, my partner and I made an infographic on smoking. Because it was much easier for me to customize our page, and add an interactive layer to it, I created a website based of of the ParrallexScrolls template.</p>
+                         </div>
+
+                         <!--third (Biology)-->
+                         <aside>
+                              <img src = "img/bio_I.PNG" style="width:100%" name = "bio_tn" alt = "bio_tn" onclick = "page('proj/other/RNAvDNA/index.html')" onmouseover="document.bio_tn.src = bioW_tn.src" onmouseout="document.bio_tn.src = bioI_tn.src">
+                         </aside>
+                         <div class = obj>
+                              <a onclick="page('proj/other/RNAvDNA/index.html')">
+                              <h2>Biology - Infographic</h2>
+                              </a>
+                              <p><span></span>
+                                   <i>"Present the differences between RNA ans DNA." - Mar. 22nd, 2021 - Apr. 18th, 2021</i>
+                              </p>
+                              <p>For this project, I deceided to use a webpage not only for the interactive element and ability to customize, it was also because there wasn't really any big projects at this time, and I was going stale in HTML, CSS, and JS department.</p>
+                         </div>
+                    </div>
+               </center>
+          </div>
+
+
+          <img src = "img/teaBag.png" id = "img" width = "100%"
+               style = "
+                    position: fixed;
+                    bottom: 0px;
+                    left: 85%;
+                    width: 15%;"
+          >
+
+          <footer>
+               <p>
+                    <b>Lilian Zeng</b><br>
+                    Created: 5/14/21
+                    <span></span>
+                    Finished:_<br>
+                    E-Mail: <a href="mailto:24lzeng@student.dasd.org"> 24lzeng@student.dasd.org</a><br>
+                    <br>
+               </p>
+               <div>
+                    <span></span>Of graduate class 2024, Lilian is a potato who is lazy but requires vast amount of caffine to function. Their websites as displayed are the product of procrastination and last minute panic. If it weren't for Webtoons and other manga, Lilian would cease to exist. Other than being lazy and having existental crisies, Lilian completed DASD's Web and Design course this school year, 2020-2021. Through these unprecidented times they managed to make it through virtual school and their first year of HighSchool.
+                    <br><br>
+                    <b>Cheers to the next three years!</b>
+               </div>
+               <br><br>
+          <footer>
+     </body>
+
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS_DreamVacation | About</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="ParallaxStyle.css">
+    <link rel="stylesheet" type="text/css" href="NavStyle.css">
+    <link rel="stylesheet" type="text/css" href="Dstyle.css">
+    <link rel="stylesheet" type="text/css" href="slideStlye.css">
+    <script type = "text/javascript">
+          if (document.images) {
+               trail1 = new Image
+               trail2 = new Image
+               trail1.src = "Img/trail.jpg"
+               trail2.src = "Img/trail_2.jpg"
+               map1 = new Image
+               map2 = new Image
+               map1.src = "Img/map.jpg"
+               map2.src = "Img/map2.jpg"
+          }else {
+               trail1 = ""
+               trail2 = ""
+               document.trail = ""
+               map1 = ""
+               map2 = ""
+               document.map = ""
+          }
+          img = new Array ("Img/aboutH1", "Img/aboutH2", "Img/AboutH3")
+          thisAd = 0
+          imgCt = img.length
+          function rotate(){
+               if(document.images){
+                    thisAd++
+               if (thisAd == imgCt){
+                    thisAd = 0
+               }
+             document.Head1.src = img[thisAd]
+             setTimeout("rotate()", 3 * 1000)
+           }
+         }
+
+          dayName = new Array ("Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday");
+          monName = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
+          now = new Date();
+
+          function startTime() {
+	      var today = new Date();
+	      var h = today.getHours();
+	      var m = today.getMinutes();
+	      var s = today.getSeconds();
+	      m = checkTime(m);
+	      s = checkTime(s);
+	      document.getElementById('txt').innerHTML =
+               "<h3>"+
+               dayName[now.getDay()]+ ", "+
+               monName[now.getMonth()] + ". " +
+               now.getDate()  + " " + (now.getYear()+1900)+" "+
+               h + ":" + m + "." + s;
+	      var t = setTimeout(startTime, 500);
+          }
+
+	    function checkTime(i) {
+	      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	      return i;
+	    }
+    </script>
+
+    <script type = "text/javascript">
+    function getRandom(min, max) {
+         return Math.floor(Math.random() * (max - min) + min);
+    }
+    function saySomething(x){
+         info = new Array(2);
+         info[0] = new Array ("Arcadia is actually an island off the coast of Maine.", "Arcadia's only sand beach is called \"Sandy Beach\".", "Arcadia contains the tallest mountain on the Atlantic Coast, \"Cadillac Mountain\".", "It was originally designated \"Sieur de Monts National Monument\", coined by Woodrow Wilson, named after a French Merchant.");
+         info[1] = new Array ("Arcadia has many trails.", "About 57 miles of carriage roads were designed and financed by John D. Rockefeller.", "Arcadian Mountains, namely Cadillac Mountaint, is known for its deposite of pink Granite");
+         var random = getRandom(0,info[x].length);
+         alert(info[x][random])
+    }
+    </script>
+
+  </head>
+  <body onload = "startTime()">
+    <a id="top"></a>
+    <div class="headr , mySlides , AHead1 , fade">
+        <div class = "caption">
+          <span class = "border">About the Park!</span>
+        </div>
+   </div><div class="headr , mySlides , AHead2 , fade">
+        <div class = "caption">
+          <span class = "border">About the Park!</span>
+        </div>
+    </div>
+    <div class="headr , mySlides , AHead3 , fade">
+        <div class = "caption">
+          <span class = "border">About the Park!</span>
+        </div>
+    </div>
+      <a name = "title"></a>
+      <div>
+        <div class="navbar">
+          <a href="index.html" target = "_blank">Home</a>
+          <a href="#about">About</a>
+          <a href = "Fun.html" target = "_blank">Fun!</a>
+          <p>
+               <div id="txt" style = "float: right;
+                                        padding-right: 50px;
+                                        color: white;">
+               </div>
+          </p>
+        </div>
+      </div>
+
+      <button id = "d-l" class = "d-btn" onclick="isTheme()"><i class="material-icons">brightness_4</i></button>
+      <div class = "bar"><a href = "#title">
+        <button class = "scroll">
+          <i class="material-icons">&#xe5cf;</i>
+        </button>
+      </a></div>
+
+      <div class = "divz">
+      </br></br>
+            <div id = "title" style = "width:80%;", class = "htext">
+              ~Arcadia National Park~
+            </div>
+            </br></br>
+            <div id = "head" , class = "ctext">
+              At is best too know the rules and regulations of the park before entering. The best source
+              is <a href "https://www.nps.gov/acad/planyourvisit/index.htm">here</a>, the National park's Arcadia page, it is also summarized
+              below. Acadia has 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads. So be prepared to hike a lot.
+              Acadia's mountains are also made of granite. As pretty as it is, granite is quite slippery when wet, so please wear apropriate shoes when hiking.
+              Acadia also has amazing tide pools, it is a good idea to wear some type of water shoes becasue the stones can be sharp.
+            </div>
+            <div>
+                <div id = "content" , class = "Rtext" style = "width: 10%;">
+                     <center>
+                     <img src="Img/trail.jpg" alt="trail" name="trail" width = 100%
+                       onmouseover="document.trail.src = trail2.src"
+                       onmouseout="document.trail.src = trail1.src"/>
+                       <button onclick = "saySomething(0)"
+                            style = "margin: auto;">
+                            Click for Facts!
+                       </button>
+                    <img src="Img/map.jpg" alt="map" name="map" width = 100%
+                      onmouseover="document.map.src = map2.src"
+                      onmouseout="document.map.src = map1.src"/>
+                      <button onclick = "saySomething(1)"
+                           style = "margin: auto;">
+                           Click for Facts!
+                      </button>
+                 </center>
+                </div>
+                <div id = "text" , class = "Rtext" style = "width: 75%;">
+                  <ul style = "padding-right: 25px;">
+                    <li>
+                      For convinence, buy then print your entrance pass online,
+                      and have it ready to display before you arrive.
+                    </li>
+                    <li>
+                      Know before you go. Find listings of Acadia's available
+                      visitor services and facilities on the Current Conditions page.
+                    </li>
+                    <li>
+                      No camping, campfires, or overnight parking are permitted
+                      outside of designated campgrounds. Please practice "Leave
+                      No Trace" principles.
+                    </li>
+                    <li>
+                      Please avoid taking unnecessary risks. Hike only on
+                      designated trails.
+                    </li>
+                    <li>
+                      All pets must always be kept on a leash no longer than six
+                      feet. Dogs are prohibited from six cliff ladder trails,
+                      public beaches (May 15-Oct 15), public buildings, and
+                      ranger-led programs.
+                    </li>
+                    <li>
+                      Only bikes with motors that provide assistance only while
+                      the rider is pedaling, and at speeds less than 20 mph are
+                      allowed on park Carriage Roads. Please follow traffic rules.
+                    </li>
+                    <li>
+                      Ticks Are Prevalent in Acadia and represent an increasing
+                      public health concern. Please caution yourself from them.
+                    </li>
+                    <li>
+                      Leave Your Firewood At Home due to invasive species that
+                      may live in them. If necassary, buy local.
+                    </li>
+                    <li>
+                      Respect Wildlife. Please don't feed, approach, or provoke
+                      any wild animals in the park.
+                    </li>
+                    <li>
+                      Please don't contribute further to Traffic Congestion.
+                      Park legally and responsibly
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            </br>
+      </div>
+    </br></br></br>
+
+<div class = "bar , ctext">
+  <div id = "foot">
+    <a href = "#top"><button id = up class = "scroll">
+      <i class="material-icons">&#xe318;</i>
+    </button></a>
+    </div>
+</div>
+  </body>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 5000); // Change image every 3 seconds
+}
+
+
+function isTheme() {
+   var element = document.body;
+   element.classList.toggle("d-mode");
+   var element = document.getElementById("d-l");
+   element.classList.toggle("l-btn");
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+      if (this.hash != "") {
+        console.log("hash: " + this.hash);
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+
+</html>

@@ -1,0 +1,53 @@
+html , body {
+  font-family: times-new-roman;
+  margin-left:-1px;
+
+}
+
+.bg{
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+
+  background-image: url("img/bg.png");
+}
+
+a:link{
+  color: white;
+}
+a:visited{
+  color: white;
+}
+a:hover{
+  color: red;
+}
+
+.column{
+  display: inline-block;
+  padding: 2.5%;
+}
+
+#content{
+  background-color: #333;
+  color: white;
+  padding: 25px;
+  padding-right: 0px;
+  border-radius: 10px;
+}
+#title{
+  background-color: #DDD;
+  color: #333;
+  padding: 25px;
+  padding-right: 0px;
+  border-radius: 10px;
+}
+#text{
+  font-size: 20px;
+  background-color: #888;
+  color: white;
+  border-radius: 10px;
+  text-align: justify;
+}

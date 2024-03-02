@@ -1,0 +1,93 @@
+html, body {
+    height: 100%;
+    margin: 0;
+
+}
+body{
+  background-color: white;
+  /*overflow: hidden;*/
+
+}
+
+a:link {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:visited {
+  color: green;
+  background-color: transparent;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+.divz{
+  margin : auto;
+  width: 70%;
+  text-align: justify;
+}
+
+
+
+.Rtext{
+  font: 20px "times new roman", serif;
+  color: black;
+}
+.ctext{
+  font: 20px "times new roman", serif;
+  color: white;
+}
+.htext{
+  font: 30px "times new roman", serif;
+  color: white;
+}
+.Ttext{
+  font: 45px "times new roman", serif;
+  color: white;
+}
+
+.btn , #head, #title, #content, #text , #other{
+  border-radius: 10px;
+  padding: 20px;
+  margin: 1%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+}
+
+#content {
+      background-color: #CCC;
+      display: inline-block;}
+#text {
+      background-color: #AAA;
+      display: inline-block;}
+#title {background-color: #254535;
+        text-align:center;
+        margin: auto;}
+#head {background-color: #555;
+      width: 94.5%;}
+#other {
+  background-color: #BBB;
+  display: inline-block;
+  width: 26%;
+  margin: 1.85%;
+  transition: 0.5s;}
+
+.btn{
+  text-align: center;
+  background-color: #BBB;
+  display: inline-block;
+  width: 26%;
+  margin: 1.85%;
+  transition: 0.5s;
+
+}
+.btn:hover{
+  background-color: #888;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.8);
+  width: 26%;
+  margin: 0.95%;
+  padding: 2.5%;
+}

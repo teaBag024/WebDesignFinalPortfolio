@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Chapter5-6 | GRAPHICS and Link | Animal Project
+    </title>
+
+    <link rel="stylesheet" type="text/css" href = "slideStyle.css">
+    <link rel="stylesheet" type="text/css" href = "style.css">
+
+
+    <script language="Javascript" type="text/javascript">
+         dayName = new Array ("Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday");
+         monName = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
+         now = new Date();
+
+         function startTime() {
+              var today = new Date();
+              var h = today.getHours();
+              var m = today.getMinutes();
+              var s = today.getSeconds();
+              m = checkTime(m);
+              s = checkTime(s);
+              document.getElementById('txt').innerHTML =
+                   "<h3>"+
+                   dayName[now.getDay()]+ ", "+
+                   monName[now.getMonth()] + ". " +
+                   now.getDate()  + " " + (now.getYear()+1900)+" "+
+                   h + ":" + m
+              var t = setTimeout(startTime, 500);
+         }
+
+       function checkTime(i) {
+          if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+          return i;
+       }
+    </script>
+    <script language="Javascript" type="text/javascript">
+          function getName(){
+               var name = prompt("What is your name?, Enter your name here");
+               alert("Welcome to my website, " + name + "!")
+               document.getElementById("name").innerHTML = name
+          }
+    </script>
+    <script language="Javascript" type="text/javascript">
+       myPix = new Array("Image/banner.jpg","Image/BannerA.jpg", "Image/BannerB.jpg")
+       thisAd = -1
+       imgCt = (myPix.length)
+
+       function rotate(){
+         if(document.images){
+           thisAd++
+           if (thisAd == imgCt){
+            thisAd = 0
+           }
+           document.myPicture.src = myPix[thisAd]
+           setTimeout("rotate()", 5 * 1000)
+         }
+       }
+    </script>
+
+ </head>
+  <a name = "top">
+  <body bgcolor = "#5F875F" onload = "rotate() , startTime()">
+    <center>
+    </br>
+    </br>
+      <img src = "Image/banner.JPG" alt="Banner" name = "myPicture"
+      height = "288" width = "1152"/>
+
+    </br>
+    </br>
+    <table
+    border="1"
+    bgcolor = "#DFFFDF"
+    width = 50%>
+      <tr bgcolor = "#BCBCBC">
+        <th colspan = "3">
+          Website Navigation
+        </th>
+      </tr>
+      <tr>
+        <td>
+          Home: You are on this Page
+        </td>
+        <td width = 33%>
+          <a href = "animala.html" target = "_blank">Dogs</a>
+        </td>
+        <td width = 33%>
+          <a href = "animalb.html" target = "_blank">Cats</a>
+        </td>
+      </tr>
+      <tr>
+           <td colspan = "3">
+                Hello <span id = 'name'></span>
+                <button onclick = 'getName()'>Name</button>
+                , It is currently
+                <span id = 'txt'></span>
+                Welcome to Dogs V Cats Showdown.
+           </td>
+      </tr>
+      </table>
+    </br>
+    </center>
+    <hr
+    color = "#005F00"
+    size = "5"
+    width = 75%
+    align = "center"/>
+    <center>
+    </br>
+    </br>
+    <table
+    width = 85%
+    border = "0"
+    bgcolor = "#DFFFDF">
+      <tr>
+        <th colspan = "3">
+          <h1>The Adorable Showdown</h1>
+          <hr
+          color = "#005F00"
+          size = "5"
+          width = 75%
+          align = "center"/>
+        </th>
+      </tr>
+      <tr>
+        <td width = 40%><center><h1>
+          <a href = "animala.html" target = "_blank">
+            <blockquote>
+            <div class="container">
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">1 / 5</div>
+                <img src = "Image/dogind.JPG" style="width:60%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">2 / 5</div>
+                <img src="Image/rottweiler.JPG" style="width:60%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">3 / 5</div>
+                <img src="Image/pug.JPG" style="width:60%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">4 / 5</div>
+                <img src="Image/pom.JPG" style="width:29%">
+              </div>
+
+              <div class="mySlides"
+                  align = "center">
+                <div class="numbertext">5 / 5</div>
+                <img src="Image/kawaiii.JPG" style="width:27%">
+              </div>
+
+              <a class="prev" onclick="plusSlides(-1)">❮</a>
+              <a class="next" onclick="plusSlides(1)">❯</a>
+
+              <div class="caption-container">
+                <p id="caption"></p>
+              </div>
+
+              <div class="row"
+                    align = "center">
+                <div class="column">
+                  <img class="demo cursor" src="Image/dogind.JPG" style="width:100%" onclick="currentSlide(1)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/rottweiler.JPG" style="width:100%" onclick="currentSlide(2)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/pug.JPG" style="width:100%" onclick="currentSlide(3)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/pom.JPG" style="width:50%" onclick="currentSlide(4)">
+                </div>
+                <div class="column">
+                  <img class="demo cursor" src="Image/kawaiii.JPG" style="width:45%" onclick="currentSlide(5)">
+                </div>
+              </div>
+            </div>
+          </blockquote>
+          </a>
+        </td></center></h1>
+        <td width = 5%></td>
+        <td width = 40%><center><h1>
+          <a href = "animalb.html"
+          target = "_blank">
+          <blockquote>
+          <div class="container">
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">1 / 5</div>
+              <img src = "Image/catind.JPG" style="width:63%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">2 / 5</div>
+              <img src="Image/orange.JPG" style="width:48%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">3 / 5</div>
+              <img src="Image/brown.JPG" style="width:52%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">4 / 5</div>
+              <img src="Image/longFacedDD.JPG" style="width:29%">
+            </div>
+
+            <div class="mySlides1"
+                align = "center">
+              <div class="numbertext">5 / 5</div>
+              <img src="Image/-w-.JPG" style="width:57%">
+            </div>
+
+            <a class="prev" onclick="plusSlides1(-1)">❮</a>
+            <a class="next" onclick="plusSlides1(1)">❯</a>
+
+            <div class="caption-container">
+              <p id="caption1"></p>
+            </div>
+
+            <div class="row"
+                  align = "center">
+              <div class="column">
+                <img class="demo1 cursor" src="Image/catind.JPG" style="width:100%" onclick="currentSlide1(1)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/orange.JPG" style="width:75%" onclick="currentSlide1(2)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/brown.JPG" style="width:80%" onclick="currentSlide1(3)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/longFacedDD.JPG" style="width:45%" onclick="currentSlide1(4)">
+              </div>
+              <div class="column">
+                <img class="demo1 cursor" src="Image/-w-.JPG" style="width:90%" onclick="currentSlide1(5)">
+              </div>
+            </div>
+          </div>
+        </blockquote>
+          </a>
+        </td></center></h1>
+      </tr>
+      <tr>
+        <td>
+        <div align = "justify"><blockquote>
+          <center><h3><i>Canis lupus familiaris </i></h3></center>
+
+          Also commonly known as the domesticated dog, you
+          have your loyal friend who follows you around the
+          house. Dogs are avalible in all sorts of sizes,
+          colors and breeds, adorable in every way, and quite
+          frankly one of our dearest treasures on Earth.
+        </br>
+        </br>
+          <b>
+          On This website we delve into the history of our
+          "Man's Best Friend", and desipher their transformation
+          from wolf to corgi, with curtisy of yours truly
+          writing way too much than she wanted to.
+        </b>
+        </blockquote></div>
+        </td>
+        <td></td>
+        <td>
+          <div align = "justify"><blockquote>
+            <center><h3><i>Felis catus</i></h3></center>
+            Also known as the domesticated cat, you have your
+            loyal lap friend who won't get off your computer.
+            Avalible in all sorts of sizes, colors and breeds.
+            Pay heed to their elegance, temper, and charecteristics,
+            because we are about to uncover on of humanity's
+            gems.
+          </br>
+          </br>
+            <b>
+              Delve into this websites' many pictures, brief
+              comments, a dissection of their behavior,
+              and an enstalment of history on our furry little
+              companions.
+          </b>
+          </blockquote></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan = 3>
+          </br>
+          </br>
+          <hr
+          color = "#005F00"
+          size = "5"
+          width = 75%
+          align = "center"/>
+          </br>
+          </br>
+              <center><a href = "#top">Back to Top</a></center>
+            </br>
+
+        </td>
+      </tr>
+
+      </table>
+    </br>
+    </br>
+  </center>
+    </body>
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+    <script>
+    var slideIndex1 = 1;
+    showSlides1(slideIndex1);
+
+    function plusSlides1(n) {
+      showSlides1(slideIndex1 += n);
+    }
+
+    function currentSlide1(n) {
+      showSlides1(slideIndex1 = n);
+    }
+
+    function showSlides1(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides1");
+      var dots = document.getElementsByClassName("demo1");
+      var captionText = document.getElementById("caption1");
+      if (n > slides.length) {slideIndex1 = 1}
+      if (n < 1) {slideIndex1 = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex1-1].style.display = "block";
+      dots[slideIndex1-1].className += " active";
+      captionText.innerHTML = dots[slideIndex1-1].alt;
+    }
+    </script>
+    </html>

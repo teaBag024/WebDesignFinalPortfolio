@@ -1,0 +1,22 @@
+(--Start of Message--)
+To access the web page
+1. Unzip the folder
+2. Open the web-page in your preferred
+browser.(Google Chrome works best!)
+
+Beacause it is interactive,feel free to
+click around (^-^).
+
+- Please ignore the .css files, .mp3 (.ogg),
+and the "img" folder.
+- Please do not delete them because without
+them, the images and web styling (and music) do not
+show/work.
+
+Thank You!
+
+If there are any issues just email me.
+I'll see if I can fix it.
+~ Lilian (24lzeng@student.dasd.org)
+
+(--End of message--)

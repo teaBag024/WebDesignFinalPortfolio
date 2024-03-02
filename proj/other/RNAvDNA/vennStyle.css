@@ -1,0 +1,25 @@
+.heads{
+     width: 20%;
+     display: inline-block;
+     margin: 2.5% 5%
+}
+li {
+     text-align: justify;
+     padding: 5px 0px;
+}
+.columns{
+     width: 20%;
+     display: inline-block;
+     margin: 2.5% 2.5%
+}
+
+.circles{
+     background-color: rgba(256,256,256, 0.1);
+     border: 3px solid #f1f1f1;
+     z-index: 1;
+     padding: 25% 25%;
+     border-radius: 50%;
+
+     position: absolute;
+     transition: .5s;
+}

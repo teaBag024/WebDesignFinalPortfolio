@@ -1,0 +1,26 @@
+(--Start of Message--)
+For our project we decided to make an infographic.
+Because I(Lilian) had the deplorable idea of
+making it interactable, we made a web page.
+
+To access said web page
+1. Unzip the folder
+2. Open the web-page in your preferred
+browser.(Google Chrome works best!)
+
+Beacause it is interactive,feel free to
+click around (^-^).
+
+- Please ignore the .css files
+and the "img" folder.
+- Please do not delete them because without
+them, the images and web styling do not
+show.
+
+Thank You!
+
+If there are any issues just email me.
+I'll see if I can fix it.
+~ Lilian (24lzeng@student.dasd.org)
+
+(--End of message--)

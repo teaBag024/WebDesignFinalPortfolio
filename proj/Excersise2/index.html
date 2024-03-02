@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>JavaScript example</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <script type = "text/javascript">
+      function welcome(){
+        var name = prompt("What is your name?, Enter your name here");
+        alert("Welcome to my portfolio, " + name + "!")
+        document.getElementById("nameHere").innerHTML = name}
+
+            function saySomething(message){
+        alert(message)
+      }
+
+        dayName = new Array ("Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday");
+        monName = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
+        now = new Date();
+
+
+	    function startTime() {
+	      var today = new Date();
+	      var h = today.getHours();
+	      var m = today.getMinutes();
+	      var s = today.getSeconds();
+	      m = checkTime(m);
+	      s = checkTime(s);
+	      document.getElementById('txt').innerHTML =
+	      h + ":" + m + "." + s;
+	      var t = setTimeout(startTime, 500);
+	    }
+	    function checkTime(i) {
+	      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	      return i;
+	    }
+           if (document.images) {
+             Hoover = new Image
+             HHoover = new Image
+             Hoover.src = "1.jpg"
+             HHoover.src = "1a.jpg"
+
+		   Bryce = new Image
+             HBryce = new Image
+             Bryce.src = "3.jpg"
+             HBryce.src = "3a.jpg"
+           }else {
+             Hoover = ""
+             HHoover = ""
+             document.hoover = ""
+
+  		   Bryce = ""
+               HBryce = ""
+               document.bryce = ""
+           }
+
+
+		 adImages = new Array(  "12.jpg", "2.jpg", "11.jpg")
+           thisAd = 0
+           imgC = adImages.length
+           function rotate(){
+             if(document.images){
+               thisAd++
+               if (thisAd == imgC){
+                 thisAd = 0
+               }
+               document.adBanner.src = adImages[thisAd]
+               setTimeout("rotate()", 5000)
+             }
+           }
+		 adBanr = new Array(  "banner3.jpg", "banner1.jpg", "banner2.jpg")
+           tAd = 0
+           img = adBanr.length
+           function rotate(){
+             if(document.images){
+               tAd++
+               if (tAd == img){
+                 tAd = 0
+               }
+               document.adBan.src = adBanr[tAd]
+               setTimeout("rotate()", 5000)
+             }
+           }
+
+
+		 myPix = new Array("4.jpg","5.jpg", "6.JPG","7.jpg","8.jpg","9.jpg","10.jpg")
+           thisPic = 2
+           imgCt = (myPix.length)-1
+
+           function processPrevious() {
+             if (document.images && thisPic > 2) {
+               thisPic--//no spaces this is minus minus
+			document.myPicture.src = myPix[thisPic-2]
+			document.myPicture2.src = myPix[thisPic-1]
+			document.myPicture3.src = myPix[thisPic]
+             }
+           }
+           function processNext() {
+             if (document.images && thisPic < imgCt) {
+               thisPic++
+			document.myPicture.src = myPix[thisPic-2]
+			document.myPicture2.src = myPix[thisPic-1]
+			document.myPicture3.src = myPix[thisPic]
+             }
+           }
+    </script>
+  </head>
+  <body onload="startTime() , rotate()">
+    <div id = "bar" style = "top:0px; right: 0; width:100%; "><br/></div>
+	<div style = "overflow: hidden; max-height: 50vw;">
+	      <img src="2.jpg" width="105%" name="adBanner" alt="AdBanner"
+	    	 style = "
+		      filter: blur(3px);
+		      -webkit-filter: blur(3px);
+		      margin: auto;" />
+	</div>
+    <div id = "bar" style = "bottom:0px; position: static; width:100%; margin-left: -10px;"><br/></div>
+    <div id = "bar" style = "bottom:0px; right: 0; width:100%;"><br/></div>
+
+    <div class = "caption">
+        <div class = "textbg">
+          Welcome, <h6><div id = "nameHere"></div></h6>
+          <button value = "Enter name here" onclick = "welcome()" style = "
+          width: 50%;">Enter Name Here</button>
+        </div>
+        <div class = "textbg">
+           Currently, it is:<br/><br/>
+          <script type = "text/javascript">
+          document.write("<h6>" +
+              dayName[now.getDay()]+ ", "+
+              monName[now.getMonth()] + ". " +
+              now.getDate()  + " " + (now.getYear()+1900));
+          </script>
+          <div id="txt"></div>
+          <br/>
+        </div>
+    </div>
+    <br/><br/><br/>
+    <center>
+    <div style = "margin: auto;">
+         <center>
+              <div class = "h" width = "10%">
+                   <p style = "font-size: 12px; line-height: 2.5;">
+                        Check out<br/>my<br/>other Works</p>
+                   <p style = "font-size: 25px; line-height: 1;"> >> </p>
+
+              </div>
+              <div class = "h" width = "20%">
+                   <a href = "page2.html" target="_blank">
+     	             <img src="banner1.jpg" name="adBan" alt="AdBan" width = "100%"/>
+                  </a>
+               </div>
+               <div class = "h" width = "10%">
+                    <p style = "font-size: 12px; line-height: 2.5;">
+                         Check out<br/>my<br/>other Works</p>
+                    <p style = "font-size: 25px; line-height: 1;"> << </p>
+               </div>
+          </center>
+     </div>
+     </center>
+    <br/>
+    <center>
+         <div style = "width:42%; display: inline-block;">
+           <button value = "Hoover" onclick = "saySomething('Hoover Dam')">
+     		 <img src = "1.jpg"/width = "100%" alt="hoover" name="hoover"
+     		 onmouseover="document.hoover.src = HHoover.src"
+                onmouseout="document.hoover.src = Hoover.src"/>
+     	 </button>
+           <button value = "Bryce" onclick = "saySomething('Bryce Canyon National park')">
+     		 <img src = "3.jpg"/width = "100%" alt="bryce" name="bryce"
+     		 onmouseover="document.bryce.src = HBryce.src"
+                onmouseout="document.bryce.src = Bryce.src">
+     	 </button>
+         </div>
+         <div style = "width:9%; display: inline-block;">
+              <div class = "bdiv">
+                   A scenic panorama over the hover dam.
+                   <br/><br/><br/>
+                   Hoover Dam:<br/><br/>
+                   The large dam which marked the peak and end of the great
+                   depression. Named after President Hoover, it is the largest
+                   dam in america, and one of the world's architectual marvels.
+              </div>
+              <div class = "space">
+
+              </div>
+              <div class = "bdiv">
+                   A scenic display over Bryce Canyon's natural ampitheater.
+                   <br/><br/><br/>
+                   Bryce Canyon:<br/><br/>
+                   The canyon in south western Utah known for the massive hoodos
+                   abundent wildlife, and extensive firr tree forests.
+              </div>
+              <div class = "space">
+              </div>
+         </div>
+         <div style = "width:48.1%; display: inline-block;">
+
+           <button value = "Slides" onclick = "saySomething('Backyard Birds')">
+        	     <p align="center">
+        	       <img src= "4.jpg" width = "33%" name="myPicture" alt="Slideshow"/>
+     		  <img src= "5.jpg" width = "33%" name="myPicture2" alt="Slideshow"/>
+     		  <img src= "6.jpg" width = "33%" name="myPicture3" alt="Slideshow"/>
+        	     </p>
+           </button>
+           <div class = "bdiv" style="padding: 2%; margin: 1.5%;">
+                <h1 align="center">
+                  <a href="javascript:processPrevious()">&lt;&lt;</a>
+                  &nbsp;Backyard Birds&nbsp; <!--//charecter null(space)-->
+                  <a href="javascript:processNext()">&gt;&gt;</a>
+                </h1>
+           </div>
+           <br/>
+         </div>
+    </center>
+    <br/><br/><br/><br/>
+
+
+</body>
+</html>

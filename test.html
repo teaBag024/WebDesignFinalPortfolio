@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+     <head>
+          <title>WebDesign| Portfolio</title>
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link rel="preconnect" href="https://fonts.gstatic.com">
+          <link href="https://fonts.googleapis.com/css2?family=Megrim&family=Raleway&display=swap" rel="stylesheet">
+          <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
+
+          <link rel = "stylesheet" type = "text/css" href="style.css">
+          <link rel = "stylesheet" type = "text/css" href="barStylesTest.css">
+          <link rel = "stylesheet" type = "text/css" href="slideStyle.css">
+
+
+          <script language="Javascript" type="text/javascript">
+              myPix = new Array("img/slide2.jpg","img/slide1.png", "img/slide3.jpg", "img/slide4.png", "img/slide5.jpg")
+              thisAd = -1
+              imgCt = (myPix.length)
+
+              function rotate(){
+               if(document.images){
+                 thisAd++
+                 if (thisAd == imgCt){
+                   thisAd = 0
+                 }
+                 document.myPicture.src = myPix[thisAd]
+                 setTimeout("rotate()", 5 * 1000)
+               }
+             }
+          </script>
+          <script language="Javascript" type="text/javascript">
+               dayName = new Array ("Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday");
+               monName = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
+               now = new Date();
+
+               function startTime() {
+     	          var today = new Date();
+     	          var h = today.getHours();
+     	          var m = today.getMinutes();
+     	          var s = today.getSeconds();
+     	          m = checkTime(m);
+     	          s = checkTime(s);
+     	          document.getElementById('txt').innerHTML =
+                         "<h3>"+
+                         dayName[now.getDay()]+ ", "+
+                         monName[now.getMonth()] + ". " +
+                         now.getDate()  + " " + (now.getYear()+1900)+" "+
+                         h + ":" + m + "." + s;
+     	          var t = setTimeout(startTime, 500);
+               }
+
+     	    function checkTime(i) {
+     	      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+     	      return i;
+     	    }
+          </script>
+     </head>
+     <body onload="rotate() , startTime()">
+          <nav>
+               <img src = "img/banner.png" width = 25%>
+
+               <div class = "icons">
+                    <a></a>
+                    <a><i class="fa">&#xf099;</i></a>
+                    <a><i class="fa">&#xf2ac;</i></a>
+                    <a><i class="fa">&#xf16d;</i></a>
+
+                    <div id="txt"></div>
+               </div>
+
+          </nav>
+
+          <div class = "slide">
+               <img src="img/slide1.png" width = 100%
+                    name="myPicture" alt="Slideshow" >
+               <figcaption>
+                    <li>Home</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Other</li>
+               </figcaption>
+          </div>
+          <div class = "content">
+               <div class = "heading">Title</div>
+          </div>
+
+          <img src = "img/teaBag1.png" width = "100%" style = "
+          position:-webkit-sticky;
+          position: sticky;
+          margin-left: 85%;
+          bottom: 0%;
+          width: 15%;">
+
+          <footer>
+               <p>
+                    <b>Lilian Zeng</b><br>
+                    Created: 5/14/21
+                    <span></span>
+                    Finished:_<br>
+                    E-Mail: <a href="mailto:24lzeng@student.dasd.org"> 24lzeng@student.dasd.org</a><br>
+                    <br>
+               </p>
+               <div>
+                    <span></span>Of graduate class 2024, Lilian is a potato with no will power or motivation to work. Their websites as displayed are the product of procrastination and last minute panic. If it weren't for Webtoons and other manga, Lilian would cease to exist. Other than being lazy and having existental crisies, Lilian completed DASD's Web and Design course this school year, 2020-2021. Through these unprecidented times they managed to make it through virtual school and their first year of HighSchool.
+                    <br><br>
+                    <b>Cheers to the next three years!</b>
+               </div>
+               <br><br>
+          <footer>
+     </body>
+</html>

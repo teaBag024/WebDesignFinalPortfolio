@@ -1,0 +1,117 @@
+html{
+     margin-left: -1%;
+
+     overflow-x: hidden;
+     scroll-behavior: smooth;
+     background-color: #FDFDFD;
+     font-family: 'Raleway', sans-serif;
+
+}
+#nameHold{
+     position: absolute;
+     font-family: 'Megrim', cursive;
+
+     right: 20px;
+     top: 15vh;
+}
+#txt{
+     position: absolute;
+     font-family: 'Megrim', cursive;
+
+     right: 20px;
+     top: 16vh;
+}
+#message{
+
+     background: radial-gradient(#264d73,  #264d73, #152937);
+     box-shadow: 0px 0px 50px 20px #111;
+     border-radius: 30px;
+
+     position: absolute;
+     color: white;
+     text-align: center;
+     font-size: 50px;
+     font-family: 'Megrim', cursive;
+     top: 40%;
+     left: 32.5%;
+     width: 30%;
+     height: 200px;
+     padding: 2.5% 2.5% 4.5% 2.5%;
+}
+#InMessage{
+     font-family: 'Raleway', sans-serif;
+     font-size: 40px;
+}
+
+
+.content{
+     margin: 3% auto 5% auto;
+     width: 80%;
+     /* border: 1px solid black; */
+
+}
+
+.heading{
+     margin: 2.5% auto;
+     width: 75%;
+     border-radius: 10px;
+     border: 3px solid white;
+
+     font-family: 'Megrim', cursive;
+     font-size: 75px;
+     text-align: center;
+     color: white;
+
+     background: radial-gradient(#264d73,  #264d73, #152937);
+     box-shadow: 0px 0px 50px #111;
+}
+.content p{
+     display: inline-block;
+     vertical-align: middle;
+
+     margin: 1% 1% 1% 2.5%;
+     border-radius: 20px;
+     border: 2px solid black;
+     padding: 25px;
+
+     box-shadow: 0px 0px 20px #111;
+     text-align: justify;
+}
+.content aside{
+     display: inline-block;
+     vertical-align: middle;
+     width: 25%;
+
+     margin: 1% 2.5% 1% 1%;
+     border-radius: 20px;
+     border: 8px double white;
+     padding: 20px;
+
+     background-color: #264d73;
+     box-shadow: 0px 0px 20px #111;
+     color: white;
+}
+.content aside img{
+     width: 100%;
+
+     margin: 1.5% 0%;
+     border-radius: 20px;
+
+     box-shadow: 0px 0px 20px #111;
+
+     cursor: pointer;
+}
+
+p span{
+     display:inline-block;
+     vertical-align: top;
+     padding-right: 20px;
+}
+p span img{
+     border-radius: 20px;
+     box-shadow: 0px 0px 20px #111;
+}
+p cite{
+     display: block;
+     padding: 10px 60px;
+}

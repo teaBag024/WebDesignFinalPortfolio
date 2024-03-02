@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CSS_DreamVacation | About</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="ParallaxStyle.css">
+    <link rel="stylesheet" type="text/css" href="NavStyle.css">
+    <link rel="stylesheet" type="text/css" href="Dstyle.css">
+    <link rel="stylesheet" type="text/css" href="slideStlye.css">
+
+  </head>
+  <body>
+    <a id="top"></a>
+    <div class="headr , Head1">
+        <div class = "caption">
+          <span class = "border">About the Park!</span>
+        </div>
+    </div>
+      <a name = "title"></a>
+      <div>
+        <div class="navbar">
+          <a href="index.html" target = "_blank">Home</a>
+          <a href="#about">About</a>
+          <a href = "Fun.html" target = "_blank">Fun!</a>
+        </div>
+      </div>
+
+      <button id = "d-l" class = "d-btn" onclick="isTheme()"><i class="material-icons">brightness_4</i></button>
+      <div class = "bar"><a href = "#title">
+        <button class = "scroll">
+          <i class="material-icons">&#xe5cf;</i>
+        </button>
+      </a></div>
+
+      <div class = "divz">
+      </br></br>
+            <div id = "title" style = "width:80%;", class = "htext">
+              ~Arcadia National Park~
+            </div>
+            </br></br>
+            <div id = "head" , class = "ctext">
+              At is best too know the rules and regulations of the park before entering. The best source
+              is <a href "https://www.nps.gov/acad/planyourvisit/index.htm">here</a>, the National park's Arcadia page, it is also summarized
+              below. Acadia has 27 miles of historic motor roads, 158 miles of hiking trails, and 45 miles of carriage roads. So be prepared to hike a lot.
+              Acadia's mountains are also made of granite. As pretty as it is, granite is quite slippery when wet, so please wear apropriate shoes when hiking.
+              Acadia also has amazing tide pools, it is a good idea to wear some type of water shoes becasue the stones can be sharp.
+            </div>
+            <div>
+                <div id = "content" , class = "Rtext" style = "width: 20%;">
+                    <img src = "Img/trail.JPG"
+                          width = "100%"
+                          alt = "Arcadia Map">
+                </div>
+                <div id = "text" , class = "Rtext" style = "width: 69%;">
+                  <ul style = "padding-right: 25px;">
+                    <li>
+                      For convinence, buy then print your entrance pass online,
+                      and have it ready to display before you arrive.
+                    </li>
+                    <li>
+                      Know before you go. Find listings of Acadia's available
+                      visitor services and facilities on the Current Conditions page.
+                    </li>
+                    <li>
+                      No camping, campfires, or overnight parking are permitted
+                      outside of designated campgrounds. Please practice "Leave
+                      No Trace" principles.
+                    </li>
+                    <li>
+                      Please avoid taking unnecessary risks. Hike only on
+                      designated trails.
+                    </li>
+                    <li>
+                      All pets must always be kept on a leash no longer than six
+                      feet. Dogs are prohibited from six cliff ladder trails,
+                      public beaches (May 15-Oct 15), public buildings, and
+                      ranger-led programs.
+                    </li>
+                    <li>
+                      Only bikes with motors that provide assistance only while
+                      the rider is pedaling, and at speeds less than 20 mph are
+                      allowed on park Carriage Roads. Please follow traffic rules.
+                    </li>
+                    <li>
+                      Ticks Are Prevalent in Acadia and represent an increasing
+                      public health concern. Please caution yourself from them.
+                    </li>
+                    <li>
+                      Leave Your Firewood At Home due to invasive species that
+                      may live in them. If necassary, buy local.
+                    </li>
+                    <li>
+                      Respect Wildlife. Please don't feed, approach, or provoke
+                      any wild animals in the park.
+                    </li>
+                    <li>
+                      Please don't contribute further to Traffic Congestion.
+                      Park legally and responsibly
+                    </li>
+                  </ul>
+                </div>
+            </div>
+            </br>
+      </div>
+    </br></br></br>
+
+<div class = "bar , ctext">
+  <div id = "foot">
+    <a href = "#top"><button id = up class = "scroll">
+      <i class="material-icons">&#xe318;</i>
+    </button></a>
+    </div>
+</div>
+  </body>
+
+<script>
+
+function isTheme() {
+   var element = document.body;
+   element.classList.toggle("d-mode");
+   var element = document.getElementById("d-l");
+   element.classList.toggle("l-btn");
+}
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $("a").on('click', function(event) {
+
+      if (this.hash != "") {
+        console.log("hash: " + this.hash);
+        event.preventDefault();
+
+        var hash = this.hash;
+
+        $('html, body').animate({
+          scrollTop: $(hash).offset().top
+        }, 700, function(){
+
+          window.location.hash = hash;
+        });
+      }
+    });
+  });
+</script>
+
+</html>

@@ -1,0 +1,578 @@
+<html>
+     <head>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>DNA v. RNA | What's the Difference?</title>
+          <link rel = "stylesheet" type = "text/css" href = "style.css">
+          <link rel = "stylesheet" type = "text/css" href = "navStyle.css">
+          <link rel = "stylesheet" type = "text/css" href = "headStyle.css">
+          <link rel = "stylesheet" type = "text/css" href = "vennStyle.css">
+     </head>
+     <body>
+          <!-- head -->
+          <a name = "home"></a>
+          <div style = "display: inline;">
+               <div class = "bar">
+                    <button id = "toggle" onclick="NAV()">
+                         &#9776;
+                    </button>
+                    <audio id="myAudio" loop>
+                         <source src="Skip-A-Step (2REP).mp3"/>
+                         <source src="Skip-A-Step (2REP).ogg"/>
+                    </audio>
+                    <button id = "Music" onclick="aud_play_pause()">&#x266a;</button>
+               </div>
+               <ul id = "mySidenav" class = "sidenav">
+                    <li><a class="active" id = "h" onclick = "measure()" href="#home">
+                         Home
+                    </a></li>
+                    <li><a id = "d" onclick = "measure()" href="#dna">
+                         DNA
+                    </a></li>
+                    <li><a id = "r" onclick = "measure()" href="#rna">
+                         RNA
+                    </a></li>
+                    <li><a id = "v" onclick = "measure()" href="#compare">
+                         Compare
+                    </a></li>
+               </ul>
+          </div>
+          <div id = "main">
+               <div class = "bg mySlides fade"><br></div>
+               <div class = "bg2 mySlides fade"><br></div>
+               <div class = "bg3 mySlides fade"><br></div>
+               <div id ="bg-text">
+                    <h2 style="font-size:25px">Compare and  Contrast</h2>
+                    <h1 style="font-size:50px">DNA & RNA</h1>
+                    <p>Lilian Z.</p>
+               </div>
+          </div>
+          <div class = "divide" id = "dna"><br /><br /><br /></div>
+          <!-- dna info -->
+          <a name = "dna"></a>
+          <div class = "cell">
+               <div class = "border title">DNA</div>
+               <div class = "container" style = "width: 20%">
+                    <br /><br />
+                    <div class = "border textArea">
+                              <img src = "img/DNA_animation.gif" width="100%">
+                    </div>
+                    <div class = "border textArea">
+                         Take a look at the DNA's helical structure. While some compare it to a spiraling stair case, other call it a twisted ladder. They all imply two intertwining backbones with Nitrogenous rungs.
+                    </div>
+                    <div class = "border textArea">
+                              <img src = "img/Nucleotides.jpg" width="100%">
+                    </div>
+                    <div class = "border textArea">
+                         Here is a model of the neucliotide and how they bond with each other.
+                    </div>
+               </div>
+               <div class = "container" style = "width: 73.5%">
+                    <div class = "border heading">Elucidation</div>
+                    <div class = "border textArea">
+                         <p>
+                              <span id = "heading">Fundementals of DNA</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              Deoxyribonucleic acid, or DNA is a double helical polymer that makes up our genetic code. Not only does our genetic code carry instruction for development, functioning, growth and reproduction in our bodies, it is the same for every other living organism. This is true from as tiny as viruses and bacteria, to the largest of animals, the blue whale and even dinosaurs. That being said, it is definitely one of life's most basic building blocks.
+                         </p>
+                         <p>
+                              <br />
+                              <span style = "padding-right: 25px;"></span>
+                              Found in the nucleus, during interphase, DNA is mostly in a semi-condensed ball called chromatin. However, during mitosis, or meiosis, the splitting of cells, DNA would condense further into Chromosomes. This would allow for easier crossovers and Anaphase, the splitting of the chromosome. It is possible that DNA can be found outside of the DNA. Chloroplasts and Mitochondria each have their own set past down by the female (This later developed into the Endosymbiotic theory).
+                         </p>
+                         <hr color = "white" width = "75%"/>
+                         <p>
+                              <span id = "heading">Rudimentary Composition</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              DNA has a backbone that is made of Deoxyribose (pentose-sugar), a phosphate, and its rungs are made of Nitrogenous bases. This entire piece (Backbone, Phosphate, Base) is known as a nucleotide. While it is condensed for, DNA will also contain Histonine to help bind and keep the DNA from breaking.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              A DNA's nucleotide is the monomer of the DNA polymer. Essentially, this means that many of these nucleotides strung together will make DNA. The same pieces over and over again will not create code that is capable of creating life (It's like a binary sequence with all 0s). Therefore, nucleotides will include some variation in its bases.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              This variation allows for 4 different bases, Adenine, Thymine, Guanine, Cytosine. Adenine and Guanine being Purines, the bigger of the Sugars (containing two rings), and Cytosine and Thymine, Pyrimidines, the smaller one ringed base. These Sugars, also known as Nitrogenous Bases connect together to form the rungs of DNA's Helical Ladder. Scientists have found that in the ratios of Nitrogenous Bases, Adenine and Thymine contents are the same, Guanine and Cytosine contents are the same. They concluded that Adenine pairs with Thymine in a weaker double hydrogen bond, and Guanine and Cytosine in a stronger triple hydrogen bond.
+                         </p>
+                         <p>
+                              <span id = "heading">Nucleotides Anatomized</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              The previous statement that the Nucleotides were monomers of DNA, and contained three basic parts is the most basic of understandings. The Nucleobases are the Nitrogenous bases as aforementioned. The pentose-sugar, deoxyribose, and the Nucleobase together, forms a Nucleoside. Finally, a phosphate is added to the pentose-sugar's end, thus forming a nucleoside monophosphate.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              While there are Nucleoside biphosphates, and Nucleoside triphosphates (basically adding extra phosphates to the end), the main focus here is the N.monophosphate. This is because it is here, in the first phosphate that connects two nucleotides together. Alas, the N.biphosphates and the N.triphosphates do have uses, only in the primary DNA Structure, they do not appear. The first phosphate in the N.monophosphate forms a hydroxyl group with the pentose-sugar above. This being that the hydrogen ion of Deoxyribose, and the oxygen of the phosphate group form a covalent bond, betterly known, a hydroxyl group (-OH).
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              These hydroxyl groups bond in a way so that the Deoxyribose, a furanos (five carbon sugar), is pointing its 5th carbon to the top, and 3rd carbon at its bottom (in relation to the oxygen being on top). The 3rd carbon being the one near the hydroxyl group, and the 5th, being the one outside of the ring, and connected to the phosphate group.
+                         </p>
+
+                    </div>
+               </div>
+               <!-- nextline -->
+               <center>
+                    <div>
+                         <hr color = "white" width = "95%"/>
+                    </div>
+                    <div>
+                         Important Historical Figures<br /><br />
+                         <span style="font-size:15px">(Hover over us!)</span>
+                    </div>
+                    <div>
+                         <hr color = "white" width = "95%"/>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Friedrich Miescher<br /><br />
+                              <img src = "img/F.Miescher.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        (1844-1895)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Johannes Friedrich Miescher, a Swiss biologist and physician, discovered DNA.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Miescher had taken bandages from the nearest hospital, and extracted the nucleus from the cell with an alkaline extraction and acidification. Thus resulted in a gooey clear substance for which he called Nuclein.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Fredrick Griffith<br /><br />
+                              <img src = "img/F.Griffith.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        (1877–1941)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Fredrick Griffith, a British bacteriologist, found that DNA could pass on genetics from others.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Griffith had used the stronger S strands and weaker R strands of the <i>Streptococcus pneumoniae</i>. While the living R-strand and dead S-strand did nothing to the test mouse, the experiment showed that by injecting both strands into the subject makes the mouse die.
+                                   </div>
+                              </div>
+                         </div>
+
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Oswald T. Avery<br /><br />
+                              <img src = "img/O.Avery.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        (1877-1955)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Oswald Theodore Avery Jr., a Canadian American physician and medical researcher, concluded that it was DNA, not protein that caused the transformation from Griffith's experiment.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Avery and his team built on top of Griffith's research. With the same experiment, Avery introduced new variables, a Protein Destroying Enzyme and a DNA Destroying Enzyme. The results showed that Transformation occurred even with the Protein Destroying enzyme, but failed with the DNA destroying enzyme. This proved that DNA was responsible for the storage of genetics.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Erwin Chargaff <br /><br />
+                              <img src = "img/E.Chargaff.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        (1905–2002)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Erwin Chargaff, an Austro-Hungarian born American biochemist found which nucleotide bonded to which other nucleotide.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Taking DNA samples from many different species of animals, Chargaff then measured the amount of A, T, C, G in each solution. His finding showed that the ratio of A and T are the same, C and G are the same.
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Hershey & Chase<br /><br />
+                              <img src = "img/HersheyChase.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                        <div class="textAreaFace">Alfred Hershey (1908-1997) was a bacteriologist and geneticist, and an American nobel prize winner. He and Martha Cowles Chase or Martha C. Epstein (1927-2003) teamed up to research whether genetic information was stored in the protein on DNA.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+
+                                        (note: bacteriophages are viruses that inject their proteins and DNA into a host cell)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+
+                                        Hershey and Chase inserted bacteriophages into a cell. They did it twice marking different parts of the bacteriophage with radioactive elements. The first one, they marked the proteins with sulfur-35, the second, they marked DNA with phosphorus-32. After injecting the Bacteriophage into separate cells, they noticed that the phosphorus-32 would stay within the nucleus, sulfur-35 didn’t exist proving that DNA was the genetic material.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Rosalind Franklin<br /><br />
+                              <img src = "img/R.Franklin.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        (1920-1958)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Rosalind Elsie Franklin, an English Chemist and x-ray crystallographer. She is known for taking photo 51, the clearest image of DNA which allowed Watson and Crick to deduce that DNA was a double helical structure.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        While beforehand she was known primarily for her work on bacteria, after Watson and Crick revealed the scandal where they essentially stole her work and didn’t give her as much credit as she had deserved she gained interest by the growing women’s rights movement.
+
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Crick & Watson <br /><br />
+                              <img src = "img/WatsonCrick.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        Crick and Watson are the famous duo who won the nobel prize for the structure of DNA. Yes, their theories were all based off of Rosalind's stolen work, and manipulation of the press. That being said, their contributions in comming up with the structure of DNA has history on its knees.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </center>
+          </div>
+          <div id = "rna"></div>
+          <!-- rna info -->
+          <a name = "rna"></a>
+          <div class = "cell">
+               <div class = "border title">RNA</div>
+               <div class = "container" style = "width: 20%">
+                    <br /><br />
+
+                    <div class = "border textArea">
+                         <img src = "img/rna.jpg" width="100%">
+                    </div>
+                    <div class = "border textArea">
+                         RNA and it's many forms.
+                    </div>
+                    <div class = "border textArea">
+                              <img src = "img/mRNA.png" width="100%">
+                    </div>
+                    <div class = "border textArea">
+                              <img src = "img/tRNA.png" width="100%">
+                    </div>
+                    <div class = "border textArea">
+                              <img src = "img/rRNA.gif" width="100%">
+                    </div>
+                    <div class = "border textArea">
+                         In the Image above, the rRNA is shown in orange, protein in blue.
+                    </div>
+               </div>
+               <div class = "container" style = "width: 73.5%">
+                    <div class = "border heading">Elucidation</div>
+                    <div class = "border textArea">
+                         <p>
+                              <span id = "heading">Fundementals of RNA</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              Ribonucleic acid, or RNA is a polymer with many different forms. It contains one strand and can be found in the nucleus, in the cytoplasm, the ribosome, and the Endoplasmic reticulum. RNA is one strand of Ribose backbone and nucleotides. It contains Adanine, Guanine, Uracil, and Cytosine (Uracil replacing Thymine). RNA's main function is for Protein Synthesis and Gene Expression. There are three main types of RNA. snRNA, snoRNA, piRNA, miRNA, IncRNA, siRNA, ssRNA, dsRNA, circRNA, and others do exist, but  aren't as well known as mRNA, tRNA, and rRNA.
+                         </p>
+                         <p>
+                              <span id = "heading">Creation of RNA</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              RNA stems from DNA. During a process called RNA Synthesis, RNA is created much like in DNA replication. A RNA polymerase, uses DNA helicase to unwind DNA and read the 3' to 5' DNA strand, adding the correct neucliotide to the growing strand of RNA before closing the Strand of DNA again. This process is also known as Transcription. There are five main different types of RNA polymerase, the first through third being more known. Each RNA polymerase synthesizes different RNA for different purposes, however, all of their functions do link back to Protein synthesis and gene expression.
+                         </p>
+                         <hr color = "white" width = "75%"/>
+                         <p id = 'p3'>
+                              <span id = "heading">Messenger RNA| mRNA</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              mRNA, or Messenger RNA is the single stranded code that exits the Nucleus to be transcripted into a Protein.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              Created by RNA Polymerase I and RNA Polymerase II, mRNA has two different forms, mRNA and pre-mRNA. pre-mRNA is mRNA that was just copied from DNA. While in its crude form, pre-mRNA contains parts which will not be expressed called Introns. While in the nucleus, pre-mRNA will go through RNA splicing which removes these Introns remaning the Extrons to be expressed in the protein. During RNA splicing, pre-mRNA is also given a cap and a poly-A tail to preserve the now mRNA protecting it from harm on its transport out of the Nucleus.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              mRNA will bring the Extrons out of the Nucleus and into the Cytoplasm, and Endoplasmic Reticulum for its next step.
+
+                         </p>
+                         <p id = 'p3'>
+                              <span id = "heading">Transfer RNA| tRNA</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              tRNA or Transfer RNA transfers the amino acids to the growing Polypeptide chain.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              Synthesized by RNA Polymerase III, tRNA has three loops. the T-loop towards the 3' end, Anticondon loop in the middle, and the D loop towards the 5' end. The Amino Acid will be placed on the 3' end which juts out a little more then the 5' end.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              On the Anticodon loop, there exist anti-codons. These are the codes that attatch to the mRNA as it is being translated. RNA is read in threes, the three nucleotides being the codons. These condons would code for the different Amino Acids. When the anti-codon of the tRNA matches the codon, that is when it passes its Amino Acid to the polypeptide chain and leaves to be recycled the next time a RNA is translated into Protein.
+                         </p>
+                         <p id = 'p3'>
+                              <span id = "heading">Ribosomal RNA|rRNA</span>
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              Ribosomal RNA, rRNA, the last of the three main important RNA forms houses the Translation Process of RNA to Protein.
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              Created by RNA Polymerase III, paired with other proteins, rRNA is used to create Ribosomes. There are two different types of rRNA, the short strand and the long strand, all Ribosomes must have one of each.
+                              (How can a ribosome contain proteins when the proteins are synthesized by the ribosomes themselves? Answer, most proteins have been handed down from the female sex cell.)
+                              <br /><br />
+                              <span style = "padding-right: 25px;"></span>
+                              The Ribosome has three binding sites. The A site is where the incoming tRNA binds to the mRNA, and the E site is where the tRNA leaves. The P site in the center is where the tRNA bonds the Amino Acid in a covalent peptied bond to the on growing polypeptide chain.
+                         </p>
+
+                    </div>
+               </div>
+               <center>
+                    <div>
+                         <hr color = "white" width = "95%"/>
+                    </div>
+                    <div>
+                         Important Historical Figures<br /><br />
+                         <span style="font-size:15px">(Hover over us!)</span>
+                    </div>
+                    <div>
+                         <hr color = "white" width = "95%"/>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Servero Ochoa<br /><br />
+                              <img src = "img/S.Ochoa.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        (1905-1993)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Severo Ochoa de Albornoz, a spanish physician and biochemist who won a (shared) nobel prize.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Ochoa was the scientist who discovered the enzymes which creat RNA. It was later discovered that enzyme hhe found was for RNA degration, however it was a step forward.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = "border heading face"
+                              style = "margin: 0px auto;">
+                              Alexander Rich<br /><br />
+                              <img src = "img/A.Rich.jpg" height="200px">
+                              <br /><br />
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        (1924-2015)
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Alexander Rich, biochemist and biophysicist of MIT.
+                                        <br /><br />
+                                        <span style = "padding-right: 25px;"></span>
+                                        Ochoa was the scientist who discovered the enzymes which creat RNA. It was later discovered that enzyme hhe found was for RNA degration, however it was a step forward.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+                    <div class = "container" style = "width: 20%">
+                         <div class = " border heading face stack"
+                              style = "margin: 0px auto;">
+                              Philip Sharp and Richard Roberts
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        <span style = "padding-right: 25px;"></span>
+                                        <span style = "padding-right: 25px;"></span>
+                                        Philip Sharp and Richard Roberts discovered RNA splicing, and the removal of introns from mRNA in both viruses and genetics.
+                                   </div>
+                              </div>
+                         </div>
+                         <br/><br/>
+                         <div class = "border heading face stack"
+                              style = "margin: 0px auto;">
+                              Thomas Cech and Sidney Altman
+                              <div class="overlay">
+                                   <div class="textAreaFace">
+                                        <span style = "padding-right: 25px;"></span>
+                                        <span style = "padding-right: 25px;"></span>
+                                        Cech and Altman's discovery was of the ribozyme (rRNA). The ribozymes were what essentially created proteins.
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </center>
+          </div>
+          <div id = "compare"></div>
+          <!-- compare -->
+          <a name = "compare"></a>
+          <div class = "cell">
+               <center>
+                    <div class = "border title">COMPARE</div>
+
+                    <br><br><br><br><br><br>
+
+                    <div class = "columns">
+                         <div class = "border"> DNA </div>
+                         <ul>
+                              <li>DNA contains Thymine and Dioxyribose.</li>
+                              <li>DNA is only found inside the nucleus mitochondria and chloroplasts.</li>
+                              <li>DNA consists of one form, the double helix.</li>
+                              <li>DNA is in charge of storing hereditery information such as genes.</li>
+                              <li>While the DNA in chloroplasts and mitochondiras are from the maternal side, Nucleic DNA also contains portions from the paternal side.</li>
+                         </ul>
+
+                    </div>
+                    <div class = "columns">
+                         <br><br><br>
+                         <div class = "border"> BOTH </div>
+                         <ul>
+                              <li>Both contain nuleotides and are found in nuclean.</li>
+                              <li>Both can be found in and outside the nucleus.</li>
+                              <li>Both contain four different bases and are paired Purine to Pyrimidines</li>
+                              <li>Both contain information from the maternal side.</li>
+                         </ul>
+
+                    </div>
+                    <div class = "columns">
+                         <div class = "border"> RNA</div>
+                         <ul>
+                              <li>RNA contains Uracil and Ribose.</li>
+                              <li>RNA is only found inside the nucleus cytoplasm and endoplasmic reticulum.</li>
+                              <li>RNA consists of many forms. While its main form is the single stranded piece, RNA is able to fold into many forms for many uses.</li>
+                              <li>RNA is in charge of making proteins; storing the information or making the protein itself.</li>
+                              <li>Starting RNA origins the maternal side.</li>
+                         </ul>
+
+                    </div>
+
+               </center>
+
+               <div class = "circles"
+                    style = "transform: translate(100px, -875px)">&nbsp;</div>
+               <div class = "circles"
+                    style = "transform: translate(550px, -875px)">&nbsp;</div>
+
+                    <br><br><br><br><br><br>
+
+          </div>
+          <div id = "about"></div>
+          <!-- about -->
+          <a name = "about"></a>
+          <div id = "endCredit">
+          </div>
+
+     </body>
+     <script type="text/javascript">
+          var open = true;
+          function NAV(){
+               if (open){
+                    closeNav();
+                    open = false;
+               }else{
+                    openNav();
+                    open = true;
+               }
+          }
+          function openNav() {
+               var i;
+               document.getElementById("mySidenav").style.width =  "15%";
+               document.getElementById("main").style.marginLeft = "14%";
+               document.getElementById("endCredit").style.marginLeft = "14%";
+               var cells = document.getElementsByClassName("cell");
+               for (i = 0; i<cells.length; i++){
+                    cells[i].style.marginLeft = "14%";
+               }
+               document.querySelector('#toggle').style.transform = 'rotate(-0deg)';
+
+               var cir = document.getElementsByClassName("circles");
+               cir[0].style.transform = 'translate(100px, -875px)';
+               cir[1].style.transform = 'translate(550px, -875px)';
+          }
+          function closeNav() {
+               var i;
+               document.getElementById("mySidenav").style.width = "0";
+               document.getElementById("main").style.margin= "0%";
+               document.getElementById("endCredit").style.marginLeft = "0%";
+               var cells = document.getElementsByClassName("cell");
+               for (i = 0; i<cells.length; i++){
+                    cells[i].style.marginLeft = "0%";
+               }
+               document.querySelector('#toggle').style.transform = 'rotate(90deg)';
+
+               var cir = document.getElementsByClassName("circles");
+               cir[0].style.transform = 'translate(200px, -825px)';
+               cir[1].style.transform = 'translate(700px, -825px)';
+          }
+     </script>
+     <script type="text/javascript">
+          var slideIndex = 0;
+          showSlides();
+          function showSlides() {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          for (i = 0; i < slides.length; i++) {
+           slides[i].style.display = "none";
+          }
+          slideIndex++;
+          if (slideIndex > slides.length) {slideIndex = 1}
+          slides[slideIndex-1].style.display = "block";
+          setTimeout(showSlides, 5000);
+          }
+     </script>
+     <script type="text/javascript">
+          offsets = document.getElementById('dna').getBoundingClientRect();
+          var dtop = offsets.top - 650;
+          offsets = document.getElementById('rna').getBoundingClientRect();
+          var rtop = offsets.top - 650;
+          offsets = document.getElementById('compare').getBoundingClientRect();
+          var vtop = offsets.top - 650;
+          offsets = document.getElementById('about').getBoundingClientRect();
+          var atop = offsets.top - 650;
+          window.onscroll = function() {measure()};
+
+
+          function measure(){
+               var current = document.body.scrollTop;
+               document.getElementById("h").style.borderLeft = "none";
+               document.getElementById("d").style.borderLeft = "none";
+               document.getElementById("r").style.borderLeft = "none";
+               document.getElementById("v").style.borderLeft = "none";
+               if (current==0 || current<dtop){
+                    document.getElementById("h").style.borderLeft = "10px solid #204060";
+               }else if (dtop<=current && current<rtop){
+                    document.getElementById("d").style.borderLeft = "10px solid #204060";
+               }else if (rtop<=current && current<vtop){
+                    document.getElementById("r").style.borderLeft = "10px solid #204060";
+               }else{
+                    document.getElementById("v").style.borderLeft = "10px solid #204060";
+               }
+          }
+     </script>
+     <script>
+          function aud_play_pause() {
+               var myAudio = document.getElementById("myAudio");
+               var icon = document.getElementById("Music");
+
+               myAudio.volume = 0.2;
+               if (myAudio.paused) {
+               myAudio.play();
+               icon.style.color = "00CC00";
+               } else {
+               myAudio.pause();
+               icon.style.color = "white";
+
+               }
+          }
+     </script>
+</html>

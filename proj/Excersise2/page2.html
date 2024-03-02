@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page 2 of 2</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    <script type = "text/javascript">
+      function welcome(){
+        var name = prompt("What is your name?, Enter your name here");
+        alert("Welcome to my portfolio, " + name + "!")
+        document.getElementById("nameHere").innerHTML = name}
+
+            function saySomething(message){
+        alert(message)
+      }
+
+        dayName = new Array ("Sunday", "Monday", "Tuesday", "Wendsday", "Thursday", "Friday", "Saturday");
+        monName = new Array ("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec");
+        now = new Date();
+
+
+	    function startTime() {
+	      var today = new Date();
+	      var h = today.getHours();
+	      var m = today.getMinutes();
+	      var s = today.getSeconds();
+	      m = checkTime(m);
+	      s = checkTime(s);
+	      document.getElementById('txt').innerHTML =
+	      h + ":" + m + "." + s;
+	      var t = setTimeout(startTime, 500);
+	    }
+	    function checkTime(i) {
+	      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+	      return i;
+	    }
+           if (document.images) {
+           }else {
+
+           }
+
+
+		 adImages = new Array(  "12.jpg", "2.jpg", "11.jpg")
+           thisAd = 0
+           imgC = adImages.length
+           function rotate(){
+             if(document.images){
+               thisAd++
+               if (thisAd == imgC){
+                 thisAd = 0
+               }
+               document.adBanner.src = adImages[thisAd]
+               setTimeout("rotate()", 5000)
+             }
+           }
+		 adBanr = new Array(  "banner3.jpg", "banner1.jpg", "banner2.jpg")
+           tAd = 0
+           img = adBanr.length
+           function rotate(){
+             if(document.images){
+               tAd++
+               if (tAd == img){
+                 tAd = 0
+               }
+               document.adBan.src = adBanr[tAd]
+               setTimeout("rotate()", 5000)
+             }
+           }
+
+
+		 myPix = new Array("pencil.png","eraser.jpg", "ipad.JPG")
+           thisPic = 0
+           imgCt = (myPix.length)
+
+           function processPrevious() {
+             if (document.images && thisPic > 0) {
+               thisPic--//no spaces this is minus minus
+			document.myPicture.src = myPix[thisPic]
+             }
+             else if (document.images && thisPic == 0) {
+               thisPic = imgCt-1
+			document.myPicture.src = myPix[thisPic]
+             }
+           }
+           function processNext() {
+             if (document.images && thisPic < imgCt-1) {
+               thisPic++
+			document.myPicture.src = myPix[thisPic]
+             }
+             else if (document.images && thisPic == imgCt-1) {
+               thisPic = 0
+			document.myPicture.src = myPix[thisPic]
+             }
+           }
+    </script>
+  </head>
+  <body onload="startTime() , rotate()">
+    <div id = "bar" style = "top:0px; right: 0; width:100%; ">
+          <p>
+              <script type = "text/javascript">
+              document.write("<h3>" + "&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"+
+                 dayName[now.getDay()]+ ", "+
+                 monName[now.getMonth()] + ". " +
+                 now.getDate()  + " " + (now.getYear()+1900));
+              </script>
+            <div id="txt" style = "display: inline-block;"></div>
+          </p>
+    </div>
+	<div style = "overflow: hidden; max-height: 20vw;">
+	      <img src="2.jpg" width="105%" name="adBanner" alt="AdBanner"
+	    	 style = "
+		      filter: blur(3px);
+		      -webkit-filter: blur(3px);
+		      margin: auto;" />
+	</div>
+    <div id = "bar" style = "bottom:0px; position: static; width:100%; margin-left: -10px;"><br/></div>
+    <div id = "bar" style = "bottom:0px; right: 0; width:100%;"><br/></div>
+    <center>
+    <div class = "caption"  style = "right: 36.5%">
+         <div class = "h" width = "20%">
+              <a href = "index.html" target="_blank">
+                    <img src="banner1.jpg" name="adBan" alt="AdBan" width = "100%"/>
+            </a>
+         </div>
+    </div>
+     </center>
+    <br/><br/><br/>
+    <center>
+    <div style = "margin: auto;">
+         <center>
+          </center>
+     </div>
+     </center>
+    <br/>
+    <center>
+         <div style = "width:30%; display: inline-block;">
+           <button value = "cat" onclick = "saySomething('Cat and Yarn')">
+     		 <img src = "cat.png"/width = "100%" alt="cat" name="cat"/>
+     	 </button>
+           <button value = "teaBag" onclick = "saySomething('teaBag')">
+     		 <img src = "teaBag.png"width = "100%" alt="teaBag" name="teaBag"/>
+     	 </button>
+         </div>
+         <div style = "width:9%; display: inline-block;">
+              <div class = "bdiv">
+                   A Cat Background.
+                   <br/><br/><br/>
+                   Cat:<br/><br/>
+                   Cats are wonderful, who doesn't want them as their background. No seriously, this is my computer homescreen.
+              </div>
+              <div class = "space">
+              </br></br></br></br></br>
+              </div>
+              <div class = "bdiv">
+                   A display of a tea bag.
+                   <br/><br/><br/>
+                   Tea Bag:<br/><br/>
+                   A common houshold object used in the process of making tea. The start and end of my day, and the only thing keeping be awake. With the amount of tea I consume, and the posture I assume from drinking this much tea, you could say I am a teaBag.
+              </div>
+              <div class = "space">
+                   </br></br></br></br></br>
+              </div>
+         </div>
+         <div style = "width:27%; display: inline-block;">
+
+           <button value = "Slides" onclick = "saySomething('Materials')">
+        	     <p align="center">
+        	       <img src= "pencil.png" width = "100%" name="myPicture" alt="Slideshow"/>
+        	     </p>
+           </button>
+           <div class = "bdiv" style="padding: 2%; margin: 1.5%;">
+                <h1 align="center">
+                     Materials Used While </br>
+                  <a href="javascript:processPrevious()">&lt;&lt;</a>
+                  &nbsp;Drawing&nbsp; <!--//charecter null(space)-->
+                  <a href="javascript:processNext()">&gt;&gt;</a>
+                </h1>
+           </div>
+           <br/>
+         </div>
+    </center>
+    <br/><br/><br/><br/>
+
+
+</body>
+</html>

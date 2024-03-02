@@ -1,0 +1,43 @@
+.list .obj{
+     display: inline-block;
+     vertical-align: middle;
+     width: 50%;
+     height: 22vh;
+
+     margin: 1% 1% 1% 2.5%;
+     border-radius: 20px;
+     border: 2px solid black;
+     padding: 25px;
+
+     box-shadow: 0px 0px 20px #111;
+     text-align: justify;
+}
+.list aside{
+     width: 15%;
+     height: 24vh;
+}
+aside li{
+     line-height: 1.4;
+}
+.obj a{
+     font-family: 'Megrim', cursive;
+     color:#152937;
+     text-decoration: none;
+     font-weight: bold;
+     cursor: pointer
+}
+.obj a:hover{
+     color:#264d73;
+     text-decoration: underline;
+}
+.obj p{
+     display: inline-block;
+     vertical-align: middle;
+     width: 45%;
+     border-radius: 0px;
+     border: none;
+     padding: 0px;
+
+     box-shadow: none;
+     text-align: justify;
+}

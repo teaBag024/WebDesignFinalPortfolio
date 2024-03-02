@@ -1,0 +1,42 @@
+.subCap{
+  position: absolute;
+  top: 43%;
+  right: 25%;
+  width: 100%;
+  text-align: center;
+}
+.rightList{
+  position: absolute;
+  top: 30%;
+  left: 55%;
+  width: 35%;
+  text-align: center;
+}
+.rLbtn{
+  outline: none;
+  border: none;
+  font-family: "times new roman";
+  transition: 0.5s;
+}
+.rLbtn:hover{
+  padding: 2%;
+  margin: 2%;
+}
+
+.rightList > span {
+  margin: 100px;
+  color: White;
+  padding: 18px;
+  font-size: 30px;
+  letter-spacing: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+}
+.rLText {
+  padding: 25px;
+  font-size: 15px;
+  letter-spacing: 5px;
+}
+.rLCont {
+  width: 45%;
+  display: inline-block;
+}

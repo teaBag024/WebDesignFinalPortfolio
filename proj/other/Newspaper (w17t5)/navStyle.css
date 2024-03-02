@@ -1,0 +1,41 @@
+.navbar{
+  position: fixed;
+  top: 0px;
+  padding: 10px 15px;
+  width:100%;
+  background-color: #333;
+
+  color: white;
+  font-size: 40px;
+  z-index: 100;
+}
+.navbar span a {
+  padding-right: 20px;
+  font-size: 40px;
+}
+.navbar span a:hover {
+  background-color: transparent;
+}
+.navbar a {
+  display: inline-block;
+  padding: 25px 15px;
+  font-size: 30px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  transition: 0.5s;
+  background-color: red;
+  color:white;
+}
+
+.bar{
+  position: fixed;
+  bottom: 0px;
+  padding: 10px 15px;
+  width:100%;
+  background-color: #333;
+
+  color: white;
+  font-size: 40px;
+  z-index: 100;
+}

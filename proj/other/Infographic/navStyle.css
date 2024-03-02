@@ -1,0 +1,49 @@
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  z-index: 100000;
+}
+
+.navbar a , .navbar span {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 20px 30px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+
+.navbar div , .navbar > a{
+  --gradient-color: #6FD6FF;
+}
+
+.navbar > a:hover , .navbar > div:hover {
+    transition: 0.3s;
+    border-top: 5px solid var(--gradient-color);
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #555
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.bar {
+  opacity: 100%;
+  background-color: #111;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  text-align: center;
+  z-index:1000;
+}

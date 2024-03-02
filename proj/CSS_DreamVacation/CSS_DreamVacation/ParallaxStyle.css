@@ -1,0 +1,54 @@
+
+.headr {
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  background-attachment: fixed;
+}
+
+
+.caption {
+  position: absolute;
+  top: 43%;
+  width: 100%;
+  text-align: center;
+}
+
+.border {
+  background-color: #000;
+  border-radius: 10px;
+  opacity: 75%;
+  color: White;
+  padding: 1.5%;
+  font-size: 45px;
+  letter-spacing: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,1);
+  margin: 2.5%;
+}
+
+.Head1 {
+  background-image: url("Img/head.JPG");
+  min-height: 95%;
+}
+.Head2 {
+  background-image: url("Img/head2.JPG");
+  min-height: 95%;
+}
+.Head3 {
+  background-image: url("Img/head3.JPG");
+  min-height: 95%;
+}
+.Head4 {
+  background-image: url("Img/head4.JPG");
+  min-height: 95%;
+}
+.Head5 {
+  background-image: url("Img/head5.JPG");
+  min-height: 95%;
+}
+.Head6 {
+  background-image: url("Img/head6.JPG");
+  min-height: 95%;
+}
